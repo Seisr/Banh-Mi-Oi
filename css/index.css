@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Roboto, sans-serif;
+}
+
 button {
   padding: 15px 35px;
   font-size: 15px;
@@ -114,6 +118,11 @@ header {
     text-align: center;
     height: 95%;
     width: 95%;
+    object-fit: cover;
+  }
+  & img:hover {
+    border: 2px solid #fff;
+    transition: all 0.3s;
   }
   & a:nth-child(2) {
     color: #ffffff;
@@ -134,6 +143,10 @@ header {
     padding: 0.5em 3em;
     height: auto;
     width: auto;
+  }
+  & img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
   }
   & a:nth-child(2) {
     margin: 0 9.5em;
