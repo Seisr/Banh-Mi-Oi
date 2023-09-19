@@ -5,7 +5,8 @@
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 button {
@@ -93,5 +94,47 @@ header {
         width: 35em;
       }
     }
+  }
+}
+
+/* sanpham */
+.sanpham {
+  background-color: #71231c;
+  padding: 2em 0em;
+  & h1 {
+    text-align: center;
+    color: #ffffff;
+    padding: 0em 0em 1em 0em;
+  }
+}
+
+.sanpham_content {
+  display: flex;
+  text-align: center;
+  & img {
+    text-align: center;
+    height: 95%;
+    width: 95%;
+  }
+  & a:nth-child(2) {
+    color: #ffffff;
+  }
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10em 5em;
+  color: #ffffff;
+  background-image: url("/img/index/footer.webp");
+  background-repeat: no-repeat;
+  background-size: auto;
+  .footer_item:nth-child(1) {
+    width: 30%;
+  }
+  .footer_signup {
+    width: 100%;
   }
 }
