@@ -133,7 +133,7 @@ header {
 /* news */
 
 .news h1 {
-  /* margin: 1em 23em; */
+  margin: 1em 0em;
   text-align: center;
 }
 
@@ -144,7 +144,8 @@ header {
   overflow: hidden;
   margin: 2em 0em;
   & img {
-    padding: 0.5em 3em;
+    /* padding: 0.5em 0em; */
+    margin: 0.5em 1em;
     height: auto;
     width: auto;
   }
@@ -153,15 +154,15 @@ header {
     opacity: 0.8;
     transition: all 0.3s;
   }
-  & a:nth-child(2) {
-    margin: 0 9.5em;
+  & .news_info {
+    text-align: center;
   }
 }
 
 /* map */
 .map {
   & h1 {
-    /* margin: 0em 28em; */
+    margin: 1em 0em;
     text-align: center;
   }
   & iframe {
