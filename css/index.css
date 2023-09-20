@@ -9,7 +9,7 @@ body {
 }
 
 button {
-  padding: 15px 35px;
+  padding: 1em 2em;
   font-size: 15px;
   border-radius: 30px;
   color: white;
@@ -18,7 +18,7 @@ button {
   cursor: pointer;
   /* background-position: left top; */
   transition: all 0.5s;
-  background-size: 200%;
+  background-size: 100%;
 }
 
 /* header */
@@ -35,7 +35,7 @@ header {
   & ul {
     display: flex;
     list-style: none;
-    /* overflow: hidden; */
+    overflow: hidden;
   }
 
   & li a {
@@ -67,16 +67,15 @@ header {
 
 .aboutUs_content {
   display: flex;
-  justify-content: flex-end;
-  position: relative;
   align-items: center;
+  overflow: hidden;
   .about_left img {
     width: 100%;
     height: 100%;
   }
 
   .about_right {
-    padding: 10em;
+    padding: 3em;
     & p {
       margin: 2em 0;
     }
@@ -87,19 +86,20 @@ header {
 
 .mission_content {
   display: flex;
-}
-
-.mission_left {
-  padding: 5em;
-  & p {
-    margin: 2em 0;
+  overflow: hidden;
+  align-items: center;
+  .mission_left {
+    width: 70%;
+    padding: 2em;
+    & p {
+      margin: 2em 0;
+    }
   }
-  .mission_right img {
+  & .mission_right img {
     width: 100%;
     height: 100%;
   }
 }
-
 /* sanpham */
 .sanpham {
   background-color: #71231c;
@@ -123,7 +123,7 @@ header {
   & img:hover {
     border: 2px solid #fff;
     transition: all 0.3s;
-    opacity: 0.8;
+    opacity: 0.85;
   }
   & a:nth-child(2) {
     color: #ffffff;
@@ -133,12 +133,15 @@ header {
 /* news */
 
 .news h1 {
-  margin: 1em 23em;
+  /* margin: 1em 23em; */
+  text-align: center;
 }
 
 .news_content {
   display: flex;
   justify-content: center;
+  /* text-align: center; */
+  overflow: hidden;
   margin: 2em 0em;
   & img {
     padding: 0.5em 3em;
@@ -158,7 +161,8 @@ header {
 /* map */
 .map {
   & h1 {
-    margin: 0em 28em;
+    /* margin: 0em 28em; */
+    text-align: center;
   }
   & iframe {
     width: 100%;
@@ -176,25 +180,28 @@ header {
 
   .signup_left {
     display: inline;
-    padding: 5em 0em;
+    padding: 7em 0em;
     width: 100%;
   }
 
   .signup_right {
-    width: 40%;
-    & form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    & .signup_rightform form {
       margin: 2em 0em;
       & input,
       textarea {
         text-align: left;
-        padding: 10px 15em 10px 10px;
+        padding: 1em 4em 1em 1em;
         border: 1px solid;
         border-radius: 3px;
-        margin: 0.5em;
+        margin: 1em;
       }
     }
     & button {
-      margin: 0em 0em 2em 0em;
+      width: 50%;
+      margin: 0em 0em 2em 1em;
     }
   }
 }
@@ -204,10 +211,11 @@ header {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 10em 5em;
+  padding: 5em 1em;
   color: #ffffff;
   background-image: url("/img/index/footer.webp");
   background-repeat: no-repeat;
+  object-fit: calc();
   background-size: auto;
   .footer_item:nth-child(1) {
     width: 30%;
