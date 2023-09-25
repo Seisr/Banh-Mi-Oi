@@ -4,24 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/sanpham.css" />
+    <title>Sản phẩm</title>
   </head>
   <body>
     <header>
       <div class="header_content">
         <nav>
-          <ul>
+          <ul class="nav_content">
             <li><a href="./index.html">Trang chủ</a></li>
-            <li><a href="./chitietSanPham.html">Sản phẩm</a></li>
+            <li><a href="./sanpham.html">Sản phẩm</a></li>
             <li><a href="./uudai.html">Thông tin ưu đãi</a></li>
             <li><a href="">Tin tức</a></li>
-            <li><a href="">Thông tin cửa hàng</a></li>
+            <!-- <li><a href="">Thông tin cửa hàng</a></li> -->
             <li><a href="./about-us.html">Về chúng tôi</a></li>
             <li><a href="./contact.html">Thông tin liên hệ</a></li>
+          </ul>
+          <ul class="nav_login">
+            <li><a href="./login.html">Đăng nhập</a></li>
+            <li><a href="./register.html">Đăng ký</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <section class="banner">
+      <img src="./img/index/banner.webp" alt="" />
+    </section>
+    <h1>Chọn món ngay nào</h1>
+    <section class="sanpham"></section>
     <footer>
       <div class="footer_item">
         <ul>
@@ -51,5 +61,12 @@
         </ul>
       </div>
     </footer>
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>

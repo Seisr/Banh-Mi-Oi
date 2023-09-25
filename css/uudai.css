@@ -15,22 +15,57 @@ html {
 }
 
 body {
-  font-size: 1.8rem;
-  line-height: 1.4;
-  letter-spacing: 0.8px;
-  word-spacing: 0.5px;
+  font-size: 1.6rem;
+  /* line-height: 1.4; */
+  /* letter-spacing: 0.8px;
+  word-spacing: 0.5px; */
 }
 
 h1 {
-  font-size: 3rem;
+  /* font-size: 3rem; */
 }
 
 h2 {
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 /* Header */
 header {
+  height: 100%;
+  width: 100%;
+  .header_content {
+    & nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: #333;
+    }
+    & .nav_content {
+      display: flex;
+      list-style: none;
+      overflow: hidden;
+    }
+    & .nav_login {
+      display: flex;
+      list-style: none;
+      overflow: hidden;
+    }
+
+    & li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    & li a:hover {
+      background-color: #111;
+    }
+  }
+}
+
+/* header {
   height: 100%;
   width: 100%;
 }
@@ -58,7 +93,7 @@ header li a {
 
 header li a:hover {
   background-color: #111;
-}
+} */
 
 /* banner */
 .banner img {

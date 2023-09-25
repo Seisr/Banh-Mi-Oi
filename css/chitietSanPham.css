@@ -32,27 +32,34 @@ header {
   height: 100%;
   width: 100%;
   .header_content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
-  }
-  & ul {
-    display: flex;
-    list-style: none;
-    /* overflow: hidden; */
-  }
+    & nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: #333;
+    }
+    & .nav_content {
+      display: flex;
+      list-style: none;
+      overflow: hidden;
+    }
+    & .nav_login {
+      display: flex;
+      list-style: none;
+      overflow: hidden;
+    }
 
-  & li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+    & li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-  & li a:hover {
-    background-color: #111;
+    & li a:hover {
+      background-color: #111;
+    }
   }
 }
 
