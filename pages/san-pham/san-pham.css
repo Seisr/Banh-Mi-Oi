@@ -62,18 +62,23 @@ header {
 .sanpham {
   display: flex;
   .sanpham_left {
-    width: 75%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     & img {
       height: 100%;
       width: 100%;
     }
+    & img:hover {
+      border: 1px solid black;
+      transition: all 0.2s;
+      opacity: 0.85;
+    }
   }
-  .sanpham_right {
+  /* .sanpham_right {
     margin: 0em 0em 0em 1em;
-  }
+  } */
 }
 
 /* Footer */
