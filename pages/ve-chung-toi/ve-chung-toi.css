@@ -465,7 +465,7 @@ section .main_btn:hover i {
   width: 100%;
   height: 100vh;
   padding: 70px 0;
-  background-image: url(image/bg2.jpg);
+  background-image: url(../../img/ve-chung-toi//bg2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -547,7 +547,7 @@ section .main_btn:hover i {
 .team {
   width: 100%;
   height: 90vh;
-  background-image: url(image/bg1.jpg);
+  background-image: url(../../img/ve-chung-toi/bg1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -659,7 +659,7 @@ footer {
   justify-content: space-between;
   padding: 5em 1em;
   color: #ffffff;
-  background-image: url("/img/index/footer.webp");
+  background-image: url("../../img/index/footer.webp");
   background-repeat: no-repeat;
   object-fit: calc();
   background-size: auto;
