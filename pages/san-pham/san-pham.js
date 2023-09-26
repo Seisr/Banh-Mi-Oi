@@ -24,7 +24,7 @@ function renderProd(arr) {
     let product = arr[i];
     content += ` 
     <div class="sanpham_item">
-    <img src="${product.product_url}" alt="" />
+    <a href="../../pages/chi-tiet-san-pham/chi-tiet-san-pham.html?productid=${product.id}"><img src="${product.product_url}" alt="" /></a>
     <p>${product.name}</p>
   </div>
 `;

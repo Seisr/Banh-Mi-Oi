@@ -75,6 +75,9 @@ header {
       transition: all 0.2s;
       opacity: 0.85;
     }
+    & p {
+      text-align: center;
+    }
   }
   /* .sanpham_right {
     margin: 0em 0em 0em 1em;

@@ -14,7 +14,7 @@
           <ul class="nav_content">
             <li><a href="../../index.html">Trang chủ</a></li>
             <li><a href="../san-pham/san-pham.html">Sản phẩm</a></li>
-            <li><a href="../uu-dai/uu-dai.html"">Thông tin ưu đãi</a></li>
+            <li><a href="../uu-dai/uu-dai.html">Thông tin ưu đãi</a></li>
             <li><a href="">Tin tức</a></li>
             <!-- <li><a href="">Thông tin cửa hàng</a></li> -->
             <li>
@@ -33,12 +33,10 @@
     </header>
     <main>
       <div class="detail">
-        <div class="detail_left">
-          <img src="./img/index/sanpham1.webp" alt="" />
-        </div>
+        <div class="detail_left" id="dtLeft"></div>
         <div class="detail_right">
-          <div class="detail_right_item">
-            <h1>Bánh mì lườn ngỗng Bắc Kinh</h1>
+          <div class="detail_right_item" id="dtR1">
+            <!-- <h1 id="dtRh1"></h1>
             <div class="price"><span>390000</span></div>
             <div class="purchase">
               <input type="button" value="-" class="qty-btn" />
@@ -51,15 +49,15 @@
                 class="qty-selector"
               />
               <input type="button" value="+" class="qty-btn" />
-            </div>
+            </div> -->
           </div>
-          <div class="detail_right_item">
-            <p>
+          <div class="detail_right_item" id="dtR2">
+            <!-- <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
               dolorum sapiente, est omnis fuga maxime officia distinctio ea quam
               illum, repellendus non quae ipsum placeat suscipit iste deserunt
               unde assumenda.
-            </p>
+            </p> -->
           </div>
           <div class="detail_right_item">
             <input type="text" placeholder="Thêm ghi chú" />
@@ -73,19 +71,19 @@
           <div class="sanpham_content">
             <div>
               <a href="./chitietSanPham.html"
-                ><img src="./img/index/sanpham1.webp" alt=""
+                ><img src="../../img/index/sanpham1.webp" alt=""
               /></a>
               <a href="./chitietSanPham.html">Bánh mì lườn ngỗng bắc kinh</a>
             </div>
             <div>
               <a href="./chitietSanPham.html"
-                ><img src="./img/index/sanpham2.webp" alt=""
+                ><img src="../../img/index/sanpham2.webp" alt=""
               /></a>
               <a href="./chitietSanPham.html">Bánh mì que pate chà bông</a>
             </div>
             <div>
               <a href="./chitietSanPham.html"
-                ><img src="./img/index/sanpham4.webp" alt=""
+                ><img src="../../img/index/sanpham4.webp" alt=""
               /></a>
               <a href="./chitietSanPham.html">Chà bông cay</a>
             </div>
@@ -122,5 +120,13 @@
         </ul>
       </div>
     </footer>
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./chi-tiet-san-pham.js"></script>
   </body>
 </html>
