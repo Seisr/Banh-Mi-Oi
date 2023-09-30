@@ -26,22 +26,34 @@ button {
 header {
   height: 100%;
   width: 100%;
+
   .header_content {
     & nav {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
+      overflow: hidden;
       background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
     }
+
     & .nav_content {
       display: flex;
       list-style: none;
       overflow: hidden;
     }
+
     & .nav_login {
       display: flex;
       list-style: none;
       overflow: hidden;
+    }
+
+    & .nav_logo img {
+      max-width: 100%;
+      max-height: 50px;
     }
 
     & li a {
@@ -55,8 +67,10 @@ header {
     & li a:hover {
       background-color: #111;
     }
+
   }
 }
+
 
 .container {
   max-width: 1200px;
@@ -76,6 +90,7 @@ header {
   display: flex;
   align-items: center;
   overflow: hidden;
+
   .about_left img {
     width: 100%;
     height: 100%;
@@ -83,6 +98,7 @@ header {
 
   .about_right {
     padding: 3em;
+
     & p {
       margin: 2em 0;
     }
@@ -95,22 +111,27 @@ header {
   display: flex;
   overflow: hidden;
   align-items: center;
+
   .mission_left {
     width: 70%;
     padding: 2em;
+
     & p {
       margin: 2em 0;
     }
   }
+
   & .mission_right img {
     width: 100%;
     height: 100%;
   }
 }
+
 /* sanpham */
 .sanpham {
   background-color: #71231c;
   padding: 2em 0em;
+
   & h1 {
     text-align: center;
     color: #ffffff;
@@ -121,17 +142,20 @@ header {
 .sanpham_content {
   display: flex;
   text-align: center;
+
   & img {
     text-align: center;
     height: 95%;
     width: 95%;
     object-fit: cover;
   }
+
   & img:hover {
     border: 2px solid #fff;
     transition: all 0.3s;
     opacity: 0.85;
   }
+
   & a:nth-child(2) {
     color: #ffffff;
   }
@@ -150,17 +174,20 @@ header {
   /* text-align: center; */
   overflow: hidden;
   margin: 2em 0em;
+
   & img {
     /* padding: 0.5em 0em; */
     margin: 0.5em 1em;
     height: auto;
     width: auto;
   }
+
   & img:hover {
     transform: scale(1.1);
     opacity: 0.8;
     transition: all 0.3s;
   }
+
   & .news_info {
     text-align: center;
   }
@@ -172,6 +199,7 @@ header {
     margin: 1em 0em;
     text-align: center;
   }
+
   & iframe {
     width: 100%;
     height: 400px;
@@ -182,6 +210,7 @@ header {
 .signup {
   background-color: #eee6d2;
 }
+
 .signup_content {
   display: flex;
   margin: 2em 2em;
@@ -196,8 +225,10 @@ header {
     display: flex;
     flex-direction: column;
     width: 60%;
+
     & .signup_rightform form {
       margin: 2em 0em;
+
       & input,
       textarea {
         text-align: left;
@@ -207,6 +238,7 @@ header {
         margin: 1em;
       }
     }
+
     & button {
       width: 50%;
       margin: 0em 0em 2em 1em;
@@ -225,9 +257,11 @@ footer {
   background-repeat: no-repeat;
   object-fit: calc();
   background-size: auto;
+
   .footer_item:nth-child(1) {
     width: 30%;
   }
+
   .footer_signup {
     width: 100%;
   }
