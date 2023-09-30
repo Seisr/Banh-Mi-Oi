@@ -91,8 +91,7 @@ form {
 }
 
 /* Full-width inputs */
-input[type=text],
-input[type=password] {
+input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 20px 0;
@@ -117,23 +116,6 @@ button:hover {
   opacity: 0.8;
 }
 
-/* The "Forgot password" text */
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-
-  .cancelbtn {
-    width: 100%;
-  }
-}
 
 footer {
   display: flex;
@@ -172,18 +154,6 @@ footer {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
-}
-
-@media (max-width: 900px) {
-  .cart-products {
-    width: 95%;
-  }
-}
-
-@media (max-width: 320px) {
-  .cart-products {
-    width: 98%;
-  }
 }
 
 .cart-products .product-rows {

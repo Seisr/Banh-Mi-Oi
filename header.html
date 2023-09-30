@@ -1,0 +1,37 @@
+<div class="header_content">
+    <nav>
+        <ul class="nav_logo">
+            <a href="/">
+                <img src="//theme.hstatic.net/200000392523/1000896443/14/logo.png?v=104" alt="Big Belly" />
+            </a>
+        </ul>
+        <ul class="nav_content">
+            <li><a href="../../index.html">Trang chủ</a></li>
+            <li><a href="pages/san-pham/san-pham.html">Sản phẩm</a></li>
+            <li><a href="pages/uu-dai/uu-dai.html">Thông tin ưu đãi</a></li>
+            <li><a href="">Tin tức</a></li>
+            <!-- <li><a href="">Thông tin cửa hàng</a></li> -->
+            <li>
+                <a href="pages/ve-chung-toi/ve-chung-toi.html">Về chúng tôi</a>
+            </li>
+            <li>
+                <a href="pages/lien-he/lien-he.html">Thông tin liên hệ</a>
+            </li>
+        </ul>
+        <ul class="nav_login">
+            <li><a href="pages/dang-nhap/dang-nhap.html">Đăng nhập</a></li>
+            <li><a href="pages/dang-ky/dang-ky.html">Đăng ký</a></li>
+            <li><a href="#" class="fa fa-cart-shopping" onClick="handleClick()"></a></li>
+        </ul>
+    </nav>
+</div>
+<script>
+    function handleClick() {
+        if (sessionStorage.getItem('token')) {
+            window.location.href = 'pages/cart/cart.html';
+        } else {
+            alert("Vui lòng đăng nhập")
+            window.location.href = 'pages/dang-nhap/dang-nhap.html';
+        }
+    }
+</script>
