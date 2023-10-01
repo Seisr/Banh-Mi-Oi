@@ -28,8 +28,6 @@ window.onload = function () {
         console.log("tang");
         document.getElementById("quantity").innerHTML = `${count}`;
         document.getElementById("price").innerHTML = `${price}`;
-        sessionStorage.setItem("current_quantity", count);
-        sessionStorage.setItem("current_price", price);
       }
       if (count > 0) {
         document.getElementById("my-button").disabled = false;
@@ -42,8 +40,6 @@ window.onload = function () {
         console.log("giam");
         document.getElementById("quantity").innerHTML = `${count}`;
         document.getElementById("price").innerHTML = `${price}`;
-        sessionStorage.setItem("current_quantity", count);
-        sessionStorage.setItem("current_price", price);
       }
       if (count == 0) {
         document.getElementById("my-button").disabled = true;
@@ -54,7 +50,7 @@ window.onload = function () {
     var content1 = "";
     content1 += `
         <h1>${product.name}</h1>
-        <div class="price" id="price"><span>${price}</span></div>
+        <div class="price"><span id="price">${price}</span></div>
         <div class="purchase">
         <input type="button" value="-" class="qty-btn" onclick=handleGiam() />
         <span id="quantity">${count}</span>
@@ -90,11 +86,11 @@ window.onload = function () {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        product_id: product_id,
+        product_id: product_id + 1,
         variation: {},
         note: body.note,
-        qty: Number(sessionStorage.current_quantity),
-        price: Number(sessionStorage.current_price),
+        qty: Number(document.getElementById("quantity").innerHTML),
+        price: Number(document.getElementById("price").innerHTML),
       }),
     }).then((res) =>
       res.json().then((data) => {
