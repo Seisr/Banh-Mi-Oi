@@ -13,7 +13,11 @@ fetch("https://banhmioi-nvpaf9d6.b4a.run/carts", {
 }).then((res) =>
   res.json().then((data) => {
     basket = data.data || [];
-
+    if (basket.length == 0) {
+      document.getElementById("dat-hang-button").disabled = true;
+    } else {
+      document.getElementById("dat-hang-button").disabled = false;
+    }
     generateCartItems();
     totalAmount();
     cart_ids();
