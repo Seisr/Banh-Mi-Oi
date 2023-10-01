@@ -31,22 +31,34 @@ button {
 header {
   height: 100%;
   width: 100%;
+
   .header_content {
     & nav {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
+      overflow: hidden;
       background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
     }
+
     & .nav_content {
       display: flex;
       list-style: none;
       overflow: hidden;
     }
+
     & .nav_login {
       display: flex;
       list-style: none;
       overflow: hidden;
+    }
+
+    & .nav_logo img {
+      max-width: 100%;
+      max-height: 50px;
     }
 
     & li a {
@@ -60,6 +72,7 @@ header {
     & li a:hover {
       background-color: #111;
     }
+
   }
 }
 
@@ -70,34 +83,43 @@ header {
   height: 100%;
   width: 100%;
   overflow: hidden;
+
   .detail_left {
     padding: 4em 4em;
   }
+
   .detail_right {
     margin: 4em 4em;
+
     & p {
       margin: 1em 0em;
     }
+
     & h1 {
       margin: 2em 0em 1em 0em;
     }
+
     .price {
       margin-bottom: 1em;
     }
+
     .purchase {
       margin: 1em 0em;
     }
+
     .qty-btn {
       height: 32px;
       width: 32px;
       border-radius: 0;
       border: 1px solid #f5f5f5;
     }
+
     .qty-selector {
       text-align: center;
       height: 32px;
       width: 5em;
     }
+
     .detail_right_item:nth-child(3) {
       & input {
         /* margin: 3em 0em; */
@@ -112,6 +134,7 @@ header {
 .sanpham {
   background-color: #71231c;
   padding: 2em 0em;
+
   & h1 {
     text-align: center;
     color: #ffffff;
@@ -122,11 +145,13 @@ header {
 .sanpham_content {
   display: flex;
   text-align: center;
+
   & img {
     text-align: center;
     height: 95%;
     width: 95%;
   }
+
   & a:nth-child(2) {
     color: #ffffff;
   }
@@ -135,17 +160,28 @@ header {
 /* footer */
 
 footer {
+  margin-top: 1000px;
   display: flex;
   justify-content: space-between;
-  padding: 10em 5em;
+  padding: 5em 1em;
   color: #ffffff;
   background-image: url("/img/index/footer.webp");
   background-repeat: no-repeat;
+  object-fit: calc();
   background-size: auto;
+
   .footer_item:nth-child(1) {
     width: 30%;
   }
+
   .footer_signup {
     width: 100%;
   }
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }

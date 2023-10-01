@@ -1,42 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./chi-tiet-san-pham.css" />
-    <title>BanhMiO i</title>
-  </head>
-  <body>
-    <header>
-      <div class="header_content">
-        <nav>
-          <ul class="nav_content">
-            <li><a href="../../index.html">Trang chủ</a></li>
-            <li><a href="../san-pham/san-pham.html">Sản phẩm</a></li>
-            <li><a href="../uu-dai/uu-dai.html">Thông tin ưu đãi</a></li>
-            <li><a href="">Tin tức</a></li>
-            <!-- <li><a href="">Thông tin cửa hàng</a></li> -->
-            <li>
-              <a href="../ve-chung-toi/ve-chung-toi.html">Về chúng tôi</a>
-            </li>
-            <li>
-              <a href="../lien-he/lien-he.html">Thông tin liên hệ</a>
-            </li>
-          </ul>
-          <ul class="nav_login">
-            <li><a href="../dang-nhap/dang-nhap.html">Đăng nhập</a></li>
-            <li><a href="../dang-ky/dang-ky.html">Đăng ký</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="detail">
-        <div class="detail_left" id="dtLeft"></div>
-        <div class="detail_right">
-          <div class="detail_right_item" id="dtR1">
-            <!-- <h1 id="dtRh1"></h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./chi-tiet-san-pham.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>BanhMiO i</title>
+</head>
+
+<body>
+  <header>
+    <div id="header"></div>
+  </header>
+  <main>
+    <div class="detail">
+      <div class="detail_left" id="dtLeft"></div>
+      <div class="detail_right">
+        <div class="detail_right_item" id="dtR1">
+          <!-- <h1 id="dtRh1"></h1>
             <div class="price"><span>390000</span></div>
             <div class="purchase">
               <input type="button" value="-" class="qty-btn" />
@@ -50,83 +34,56 @@
               />
               <input type="button" value="+" class="qty-btn" />
             </div> -->
-          </div>
-          <div class="detail_right_item" id="dtR2">
-            <!-- <p>
+        </div>
+        <div class="detail_right_item" id="dtR2">
+          <!-- <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
               dolorum sapiente, est omnis fuga maxime officia distinctio ea quam
               illum, repellendus non quae ipsum placeat suscipit iste deserunt
               unde assumenda.
             </p> -->
+        </div>
+        <div class="detail_right_item">
+          <form id="add-cart">
+            <input type="text" placeholder="Thêm ghi chú" name="note" />
+            <p><button id="my-button">Đặt món</button></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="sanpham">
+      <div class="container">
+        <h1>Sản phẩm liên quan</h1>
+        <div class="sanpham_content">
+          <div>
+            <a href="./chitietSanPham.html"><img src="../../img/index/sanpham1.webp" alt="" /></a>
+            <a href="./chitietSanPham.html">Bánh mì lườn ngỗng bắc kinh</a>
           </div>
-          <div class="detail_right_item">
-            <input type="text" placeholder="Thêm ghi chú" />
-            <p><button>Đặt món</button></p>
+          <div>
+            <a href="./chitietSanPham.html"><img src="../../img/index/sanpham2.webp" alt="" /></a>
+            <a href="./chitietSanPham.html">Bánh mì que pate chà bông</a>
+          </div>
+          <div>
+            <a href="./chitietSanPham.html"><img src="../../img/index/sanpham4.webp" alt="" /></a>
+            <a href="./chitietSanPham.html">Chà bông cay</a>
           </div>
         </div>
       </div>
-      <div class="sanpham">
-        <div class="container">
-          <h1>Sản phẩm liên quan</h1>
-          <div class="sanpham_content">
-            <div>
-              <a href="./chitietSanPham.html"
-                ><img src="../../img/index/sanpham1.webp" alt=""
-              /></a>
-              <a href="./chitietSanPham.html">Bánh mì lườn ngỗng bắc kinh</a>
-            </div>
-            <div>
-              <a href="./chitietSanPham.html"
-                ><img src="../../img/index/sanpham2.webp" alt=""
-              /></a>
-              <a href="./chitietSanPham.html">Bánh mì que pate chà bông</a>
-            </div>
-            <div>
-              <a href="./chitietSanPham.html"
-                ><img src="../../img/index/sanpham4.webp" alt=""
-              /></a>
-              <a href="./chitietSanPham.html">Chà bông cay</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="footer_item">
-        <ul>
-          <h1>Thông tin</h1>
-          <p>
-            CÔNG TY TNHH BIG BELLY Số 20-20B Trần Cao Vân, phường Đa Kao, quận
-            1, TP. HCM Giấy chứng nhận đăng ký kinh doanh số 0316814767 do Sở Kế
-            hoạch và Đầu tư Thành phố Hồ Chí Minh cấp lần đầu vào ngày 19 tháng
-            04 năm 2021 ĐT: 0903 793 625 Email: support@bigbelly.vn
-          </p>
-        </ul>
-      </div>
-      <div class="footer_item">
-        <ul>
-          <h1>Hỗ trợ</h1>
-          <li>Đặt hàng ngay</li>
-          <li>Thông tin giao hàng</li>
-        </ul>
-      </div>
-      <div class="footer_item">
-        <ul>
-          <h1>Hướng dẫn</h1>
-          <li>Chính sách đổi trả</li>
-          <li>Chính sách bảo mật</li>
-          <li>Điểu khoản dịch vụ</li>
-          <li>Tìm kiếm</li>
-        </ul>
-      </div>
-    </footer>
-    <!-- Axios -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
-      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./chi-tiet-san-pham.js"></script>
-  </body>
+    </div>
+  </main>
+  <footer id="footer">
+  </footer>
+  <!-- Axios -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+    integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./chi-tiet-san-pham.js"></script>
+</body>
+<script>
+  $(function () {
+    $("#header").load("../header.html")
+    $("#footer").load("../footer.html")
+  })
+</script>
+
 </html>

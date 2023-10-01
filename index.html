@@ -1,193 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- FontAwesome 6.2.0 CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Oswald:wght@200&family=Roboto:wght@100;300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Banh Mi Oi</title>
-  </head>
-  <body>
-    <header>
-      <div class="header_content">
-        <nav>
-          <ul class="nav_content">
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="pages/san-pham/san-pham.html">Sản phẩm</a></li>
-            <li><a href="pages/uu-dai/uu-dai.html">Thông tin ưu đãi</a></li>
-            <li><a href="">Tin tức</a></li>
-            <!-- <li><a href="">Thông tin cửa hàng</a></li> -->
-            <li>
-              <a href="pages/ve-chung-toi/ve-chung-toi.html">Về chúng tôi</a>
-            </li>
-            <li>
-              <a href="pages/lien-he/lien-he.html">Thông tin liên hệ</a>
-            </li>
-          </ul>
-          <ul class="nav_login">
-            <li><a href="pages/dang-nhap/dang-nhap.html">Đăng nhập</a></li>
-            <li><a href="pages/dang-ky/dang-ky.html">Đăng ký</a></li>
-            <li href="#"><a href="#" class="fa fa-cart-shopping"></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="banner">
-        <img src="./img/index/banner.webp" alt="" />
-      </section>
-      <section class="aboutUs">
-        <div class="aboutUs_content">
-          <div class="about_left">
-            <img src="./img/index/gioiThieu.webp" alt="" />
-          </div>
-          <div class="about_right">
-            <h1>GIỚI THIỆU</h1>
-            <p>
-              Big Belly ra đời dựa trên tình yêu Ẩm Thực Việt Nam của những
-              người sáng lập trẻ thông qua trải nghiệm tinh tế về sự phối hợp
-              hoàn hảo giữa giá trị ẩm thực truyền thống trong màu sắc đương
-              đại, tạo nên những món ăn đầy màu sắc, thú vị & tiện lợi cho người
-              Việt trong cuộc sống hiện tại.
-            </p>
-            <button>Xem thêm</button>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Oswald:wght@200&family=Roboto:wght@100;300;400;700&display=swap"
+    rel="stylesheet" />
+  <title>Banh Mi Oi</title>
+</head>
+
+<body>
+  <header>
+    <div id="header"></div>
+  </header>
+  <main>
+    <section class="banner">
+      <img src="./img/index/banner.webp" alt="" />
+    </section>
+    <section class="aboutUs">
+      <div class="aboutUs_content">
+        <div class="about_left">
+          <img src="./img/index/gioiThieu.webp" alt="" />
         </div>
-      </section>
-      <section class="mission">
-        <div class="mission_content">
-          <div class="mission_left">
-            <h1>SỨ MỆNH</h1>
-            <p>
-              Big Belly mong muốn là người bạn đồng hành thân thiết, mang đến
-              bữa ăn ngon, tiện lợi cho người tiêu dùng Việt Nam với các sản
-              phẩm Bánh Mì, Chà Bông, Pate, Cadé cùng nhiều sản phẩm tươi ngon
-              khác, đảm bảo vệ sinh an toàn thực phẩm.
-            </p>
-            <button>Xem thêm</button>
-          </div>
-          <div class="mission_right">
-            <img src="./img/index/mission.webp" alt="" />
-          </div>
-        </div>
-      </section>
-      <section class="sanpham">
-        <div class="container">
-          <h1>Sản phẩm bán chạy</h1>
-          <div class="sanpham_content">
-            <div>
-              <a href="./pages/chi-tiet-san-pham/chi-tiet-san-pham.html"
-                ><img src="./img/index/sanpham1.webp" alt=""
-              /></a>
-              <a href="./chitietSanPham.html">Bánh mì lườn ngỗng bắc kinh</a>
-            </div>
-            <div>
-              <a href="./chitietSanPham.html"
-                ><img src="./img/index/sanpham2.webp" alt=""
-              /></a>
-              <a href="./chitietSanPham.html">Bánh mì que pate chà bông</a>
-            </div>
-            <div>
-              <a href="./chitietSanPham.html"
-                ><img src="./img/index/sanpham4.webp" alt=""
-              /></a>
-              <a href="./chitietSanPham.html">Chà bông cay</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="news">
-        <div class="container">
-          <h1>Tin tức</h1>
-          <div class="news_content">
-            <div class="news_info">
-              <a href=""><img src="./img/index/news1.webp" alt="" /></a>
-              <a href="">Sự trở lại của bánh mì</a>
-            </div>
-            <div class="news_info">
-              <a href=""><img src="./img/index/news2.webp" alt="" /></a>
-              <a href="">Bánh mì lá cẩm ba rọi</a>
-            </div>
-            <div class="news_info">
-              <a href=""><img src="./img/index/news3.webp" alt="" /></a>
-              <a href="">Bánh mì ơi nghỉ tết</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="signup">
-        <div class="container">
-          <div class="signup_content">
-            <div class="signup_left">
-              <h1>Đăng ký bản tin</h1>
-              <p>Để cập nhật các thông tin mới nhất từ Big Belly!</p>
-            </div>
-            <div class="signup_right">
-              <div class="signup_rightform">
-                <form action="onSubmit"">
-                <input type="text" name="" placeholder="Names*" />
-                <input type="text" name="" placeholder="Emails*" />
-                <input type="text" name="" placeholder="Phone*" />
-                <textarea rows="4" cols="16" placeholder="Message*"></textarea>
-              </div>
-              <button>Đăng ký</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="map">
-        <h1>Vị trí cửa hàng</h1>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2442759202117!2d106.80138097552587!3d10.869016189285459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175273f63e36af5%3A0x37f0eeb81585394c!2zVUlULSBD4buVbmcgQw!5e0!3m2!1sen!2s!4v1695104816787!5m2!1sen!2s"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
-    </main>
-    <footer>
-      <div class="footer_item">
-        <ul>
-          <h1>Thông tin</h1>
+        <div class="about_right">
+          <h1>GIỚI THIỆU</h1>
           <p>
-            CÔNG TY TNHH BIG BELLY Số 20-20B Trần Cao Vân, phường Đa Kao, quận
-            1, TP. HCM Giấy chứng nhận đăng ký kinh doanh số 0316814767 do Sở Kế
-            hoạch và Đầu tư Thành phố Hồ Chí Minh cấp lần đầu vào ngày 19 tháng
-            04 năm 2021 ĐT: 0903 793 625 Email: support@bigbelly.vn
+            Big Belly ra đời dựa trên tình yêu Ẩm Thực Việt Nam của những
+            người sáng lập trẻ thông qua trải nghiệm tinh tế về sự phối hợp
+            hoàn hảo giữa giá trị ẩm thực truyền thống trong màu sắc đương
+            đại, tạo nên những món ăn đầy màu sắc, thú vị & tiện lợi cho người
+            Việt trong cuộc sống hiện tại.
           </p>
-        </ul>
+          <button>Xem thêm</button>
+        </div>
       </div>
-      <div class="footer_item">
-        <ul>
-          <h1>Hỗ trợ</h1>
-          <li>Đặt hàng ngay</li>
-          <li>Thông tin giao hàng</li>
-        </ul>
+    </section>
+    <section class="mission">
+      <div class="mission_content">
+        <div class="mission_left">
+          <h1>SỨ MỆNH</h1>
+          <p>
+            Big Belly mong muốn là người bạn đồng hành thân thiết, mang đến
+            bữa ăn ngon, tiện lợi cho người tiêu dùng Việt Nam với các sản
+            phẩm Bánh Mì, Chà Bông, Pate, Cadé cùng nhiều sản phẩm tươi ngon
+            khác, đảm bảo vệ sinh an toàn thực phẩm.
+          </p>
+          <button>Xem thêm</button>
+        </div>
+        <div class="mission_right">
+          <img src="./img/index/mission.webp" alt="" />
+        </div>
       </div>
-      <div class="footer_item">
-        <ul>
-          <h1>Hướng dẫn</h1>
-          <li>Chính sách đổi trả</li>
-          <li>Chính sách bảo mật</li>
-          <li>Điểu khoản dịch vụ</li>
-          <li>Tìm kiếm</li>
-        </ul>
+    </section>
+    <section class="sanpham">
+      <div class="container">
+        <h1>Sản phẩm bán chạy</h1>
+        <div class="sanpham_content">
+          <div>
+            <a href="./pages/chi-tiet-san-pham/chi-tiet-san-pham.html"><img src="./img/index/sanpham1.webp"
+                alt="" /></a>
+            <a href="./chitietSanPham.html">Bánh mì lườn ngỗng bắc kinh</a>
+          </div>
+          <div>
+            <a href="./chitietSanPham.html"><img src="./img/index/sanpham2.webp" alt="" /></a>
+            <a href="./chitietSanPham.html">Bánh mì que pate chà bông</a>
+          </div>
+          <div>
+            <a href="./chitietSanPham.html"><img src="./img/index/sanpham4.webp" alt="" /></a>
+            <a href="./chitietSanPham.html">Chà bông cay</a>
+          </div>
+        </div>
       </div>
-    </footer>
-  </body>
+    </section>
+    <section class="news">
+      <div class="container">
+        <h1>Tin tức</h1>
+        <div class="news_content">
+          <div class="news_info">
+            <a href=""><img src="./img/index/news1.webp" alt="" /></a>
+            <a href="">Sự trở lại của bánh mì</a>
+          </div>
+          <div class="news_info">
+            <a href=""><img src="./img/index/news2.webp" alt="" /></a>
+            <a href="">Bánh mì lá cẩm ba rọi</a>
+          </div>
+          <div class="news_info">
+            <a href=""><img src="./img/index/news3.webp" alt="" /></a>
+            <a href="">Bánh mì ơi nghỉ tết</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="signup">
+      <div class="container">
+        <div class="signup_content">
+          <div class="signup_left">
+            <h1>Đăng ký bản tin</h1>
+            <p>Để cập nhật các thông tin mới nhất từ Big Belly!</p>
+          </div>
+          <div class="signup_right">
+            <div class="signup_rightform">
+              <form action="onSubmit"">
+                <input type=" text" name="" placeholder="Names*" />
+              <input type="text" name="" placeholder="Emails*" />
+              <input type="text" name="" placeholder="Phone*" />
+              <textarea rows="4" cols="16" placeholder="Message*"></textarea>
+            </div>
+            <button>Đăng ký</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <h1>Vị trí cửa hàng</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2442759202117!2d106.80138097552587!3d10.869016189285459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175273f63e36af5%3A0x37f0eeb81585394c!2zVUlULSBD4buVbmcgQw!5e0!3m2!1sen!2s!4v1695104816787!5m2!1sen!2s"
+        style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+  <footer id="footer"></footer>
+</body>
+<script>
+  $(function () {
+    $("#header").load("./header.html")
+    $("#footer").load("./pages/footer.html")
+  })
+</script>
+
 </html>
