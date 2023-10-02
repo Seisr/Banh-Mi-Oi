@@ -29,6 +29,7 @@ frm.submit(function (e) {
     data: JSON.stringify(body),
     contentType: "application/json; charset=utf-8",
     success: function (data) {
+      console.log(data);
       console.log("Submission was successful.");
       console.log(data);
       window.location.href = "../dang-nhap/dang-nhap.html";
@@ -41,3 +42,5 @@ frm.submit(function (e) {
     },
   });
 });
+
+console.log(body);

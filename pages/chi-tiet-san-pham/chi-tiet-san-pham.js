@@ -1,8 +1,7 @@
 $(function () {
-  $("#header").load("../header.html");
-  $("#footer").load("../footer.html");
+  $("#header").load("../../header.html");
+  $("#footer").load("../../footer.html");
 });
-
 function handleClick() {
   if (sessionStorage.getItem("token")) {
     window.location.href = "../cart/cart.html";
@@ -30,11 +29,17 @@ window.onload = function () {
       console.log(err);
     });
   }
+
   getAllProd();
   let count = 1;
   function renderProd(product) {
-    var pd_price = Number(product.list_price);
-    var price = count * pd_price;
+    // handleTang = () => {
+    //   if (count < product.stock_qty) {
+    //     count += 1;
+    //     console.log("tang");
+    //     document.getElementById("quantity").innerHTML = `${count}`;
+    //   }
+    // };
     handleTang = () => {
       if (count < product.stock_qty) {
         count += 1;
@@ -59,6 +64,9 @@ window.onload = function () {
         document.getElementById("my-button").disabled = true;
       }
     };
+    var pd_price = Number(product.list_price);
+    var price = count * pd_price;
+
     var content = "";
     content += `<img src="${product.product_url}" alt=""/>`;
     var content1 = "";
@@ -82,6 +90,7 @@ window.onload = function () {
     document.getElementById("dtR2").innerHTML = content2;
   }
   var frm = $("#add-cart");
+
   frm.submit(function (e) {
     if (!sessionStorage.getItem("token")) {
       alert("Vui lòng đăng nhập");
@@ -113,11 +122,3 @@ window.onload = function () {
     );
   });
 };
-// <input
-//   type="text"
-//   id="quantity"
-//   name="quantity"
-//   value="1"
-//   min="1"
-//   class="qty-selector"
-// />

@@ -29,6 +29,7 @@ frm.submit(function (e) {
     data: JSON.stringify(body),
     contentType: "application/json; charset=utf-8",
     success: function (data) {
+      console.log(data);
       console.log("Submission was successful.");
       sessionStorage.setItem("token", data.jwt);
       console.log(sessionStorage.token);
@@ -42,3 +43,4 @@ frm.submit(function (e) {
     },
   });
 });
+console.log(body);
