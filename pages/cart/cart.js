@@ -114,7 +114,7 @@ let totalAmount = () => {
   if (basket.length !== 0) {
     let amount = basket
       .map((x) => {
-        return x.qty * x.price;
+        return x.price;
       })
       .reduce((x, y) => x + y, 0);
     label.innerHTML = ` <div class="total">
