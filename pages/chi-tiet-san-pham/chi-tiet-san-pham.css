@@ -72,7 +72,6 @@ header {
     & li a:hover {
       background-color: #111;
     }
-
   }
 }
 
@@ -160,7 +159,7 @@ header {
 /* footer */
 
 footer {
-  margin-top: 1000px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   padding: 5em 1em;
