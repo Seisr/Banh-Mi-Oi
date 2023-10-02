@@ -4,23 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Roboto, sans-serif;
-}
-
-button {
-  padding: 1em 2em;
-  font-size: 15px;
-  border-radius: 30px;
-  color: white;
-  background-color: #ed3c28;
-  border: none;
-  cursor: pointer;
-  /* background-position: left top; */
-  transition: all 0.5s;
-  background-size: 100%;
-}
-
 /* header */
 
 header {
@@ -67,10 +50,25 @@ header {
     & li a:hover {
       background-color: #111;
     }
-
   }
 }
 
+body {
+  font-family: Roboto, sans-serif;
+}
+
+button {
+  padding: 1em 2em;
+  font-size: 15px;
+  border-radius: 30px;
+  color: white;
+  background-color: #ed3c28;
+  border: none;
+  cursor: pointer;
+  /* background-position: left top; */
+  transition: all 0.5s;
+  background-size: 100%;
+}
 
 .container {
   max-width: 1200px;
