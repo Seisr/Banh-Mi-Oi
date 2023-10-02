@@ -40,14 +40,14 @@ let content = `
     <li><a href="../dang-nhap/dang-nhap.html">Đăng nhập</a></li>
     <li><a href="../dang-ky/dang-ky.html">Đăng ký</a></li>
     <li>
-        <a href="./pages/cart/cart.html" class="fa fa-cart-shopping" onClick="handleClick()"></a>
+        <a href="../cart/cart.html" class="fa fa-cart-shopping" onClick="handleClick()"></a>
     </li>
 `;
 let content1 = `
     <li ><a style="cursor: pointer">${user}</a></li>
     <li><a style="cursor: pointer" onclick=handleOut()>Đăng xuất</a></li>
     <li>
-        <a href="./pages/cart/cart.html" class="fa fa-cart-shopping" onClick="handleClick()"></a>
+        <a href="../cart/cart.html" class="fa fa-cart-shopping" onClick="handleClick()"></a>
     </li>
 `;
 document.getElementById("header").innerHTML = header;
