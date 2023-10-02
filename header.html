@@ -37,6 +37,9 @@
   let content1 = `
    <li ><a style="cursor: pointer">${user}</a></li>
    <li><a style="cursor: pointer" onclick=handleOut()>Đăng xuất</a></li>
+   <li>
+        <a href="#" class="fa fa-cart-shopping" onClick="handleClick()"></a>
+      </li>
   `;
   user !== null
     ? (document.getElementById("nav_login").innerHTML = content1)
