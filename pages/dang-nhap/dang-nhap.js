@@ -17,6 +17,11 @@ var frm = $("#dang-nhap");
 frm.submit(function (e) {
   e.preventDefault();
   console.log(frm.serialize());
+
+  let user1 = document.getElementById("userName1").value;
+  console.log(user1);
+  sessionStorage.setItem("username", JSON.stringify(user1));
+
   var body = {};
   var dataArray = frm.serializeArray();
   for (var i = 0; i < dataArray.length; i++) {
@@ -43,4 +48,4 @@ frm.submit(function (e) {
     },
   });
 });
-console.log(body);
+// console.log(body);

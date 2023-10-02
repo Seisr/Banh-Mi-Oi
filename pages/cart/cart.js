@@ -1,3 +1,8 @@
+$(function () {
+  $("#header").load("../../header.html");
+  $("#footer").load("../../footer.html");
+});
+
 let label = document.getElementById("label");
 let productRows = document.getElementById("product-rows");
 let basket = [];
