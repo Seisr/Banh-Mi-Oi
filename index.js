@@ -4,14 +4,14 @@ let content = `
 <li><a href="pages/dang-nhap/dang-nhap.html">Đăng nhập</a></li>
         <li><a href="pages/dang-ky/dang-ky.html">Đăng ký</a></li>
     <li>
-      <a href="#" class="fa fa-cart-shopping" onClick="handleClick()"></a>
+      <a href="./pages/cart/cart.html" class="fa fa-cart-shopping" onClick="handleClick()"></a>
     </li>
 `;
 let content1 = `
  <li ><a style="cursor: pointer">${user}</a></li>
  <li><a style="cursor: pointer" onclick=handleOut()>Đăng xuất</a></li>
  <li>
- <a href="#" class="fa fa-cart-shopping" onClick="handleClick()"></a>
+ <a href="./pages/cart/cart.html" class="fa fa-cart-shopping" onClick="handleClick()"></a>
 </li>
 `;
 user !== null
