@@ -35,9 +35,15 @@
       </li>
   `;
   let content1 = `
-   <p style="color: white">${user}</p>
+   <li ><a style="cursor: pointer">${user}</a></li>
+   <li><a style="cursor: pointer" onclick=handleOut()>Đăng xuất</a></li>
   `;
   user !== null
     ? (document.getElementById("nav_login").innerHTML = content1)
     : (document.getElementById("nav_login").innerHTML = content);
+
+  function handleOut() {
+    sessionStorage.removeItem("username");
+    window.location.reload();
+  }
 </script>
