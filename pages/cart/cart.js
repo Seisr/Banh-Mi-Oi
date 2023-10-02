@@ -36,6 +36,9 @@ let generateCartItems = () => {
           edges: {
             product: { name },
           },
+          edges: {
+            product: { list_price: lprice },
+          },
           price,
           qty: item,
         } = x;
@@ -49,13 +52,13 @@ let generateCartItems = () => {
                 <div class="item-name-item-price">
                     <p class = "item-name"><b>${name}</b></p>
                     <p class="item-price"><b>Giá: ${formatter.format(
-                      price
+                      lprice
                     )}</b></p>
 										<p class="no-of-quantity" id = "${id}">SL: ${item}</p>
                 </div>
             </div>
             <div class="item-price-sum">
-                <h5><b>Tổng: ${formatter.format(item * price)}</b></h5>
+                <h5><b>Tổng: ${formatter.format(price)}</b></h5>
             </div>
         </div>
             `;
