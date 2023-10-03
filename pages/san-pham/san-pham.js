@@ -1,8 +1,3 @@
-// window.onload = function () {
-//   const urlParams = new URLSearchParams(window.location.search);
-//   const myParam = urlParams.get("productid");
-// };
-
 function getAllProd() {
   var promise = axios({
     url: `https://banhmioi-nvpaf9d6.b4a.run/products`,

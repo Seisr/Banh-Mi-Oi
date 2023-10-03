@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./chi-tiet-san-pham.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>BanhMiOi</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./chi-tiet-san-pham.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <title>BanhMiOi</title>
-</head>
-
-<body>
-  <header id="header"></header>
-  <main>
-    <div class="detail">
-      <div class="detail_left" id="dtLeft"></div>
-      <div class="detail_right">
-        <div class="detail_right_item" id="dtR1">
-          <!-- <h1 id="dtRh1"></h1>
+  <body>
+    <header id="header"></header>
+    <main>
+      <div class="detail">
+        <div class="detail_left" id="dtLeft"></div>
+        <div class="detail_right">
+          <div class="detail_right_item" id="dtR1">
+            <!-- <h1 id="dtRh1"></h1>
             <div class="price"><span>390000</span></div>
             <div class="purchase">
               <input type="button" value="-" class="qty-btn" />
@@ -32,43 +34,51 @@
               />
               <input type="button" value="+" class="qty-btn" />
             </div> -->
-        </div>
-        <div class="detail_right_item" id="dtR2"></div>
-        <div class="detail_right_item">
-          <form id="add-cart">
-            <input type="text" placeholder="Thêm ghi chú" name="note" />
-            <p><button id="my-button">Đặt món</button></p>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="sanpham">
-      <div class="container">
-        <h1>Sản phẩm liên quan</h1>
-        <div class="sanpham_content">
-          <div>
-            <a href="./chitietSanPham.html"><img src="../../img/index/sanpham1.webp" alt="" /></a>
-            <a href="./chitietSanPham.html">Bánh mì lườn ngỗng bắc kinh</a>
           </div>
-          <div>
-            <a href="./chitietSanPham.html"><img src="../../img/index/sanpham2.webp" alt="" /></a>
-            <a href="./chitietSanPham.html">Bánh mì que pate chà bông</a>
-          </div>
-          <div>
-            <a href="./chitietSanPham.html"><img src="../../img/index/sanpham4.webp" alt="" /></a>
-            <a href="./chitietSanPham.html">Chà bông cay</a>
+          <div class="detail_right_item" id="dtR2"></div>
+          <div class="detail_right_item">
+            <form id="add-cart">
+              <input type="text" placeholder="Thêm ghi chú" name="note" />
+              <p><button id="my-button">Đặt món</button></p>
+            </form>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <footer id="footer"></footer>
-  <!-- Axios -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
-    integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./chi-tiet-san-pham.js"></script>
-  <script src="../../header.js"></script>
-</body>
-
+      <div class="sanpham">
+        <div class="container">
+          <h1>Sản phẩm liên quan</h1>
+          <div class="sanpham_content">
+            <div>
+              <a href="./chitietSanPham.html"
+                ><img src="../../img/index/sanpham1.webp" alt=""
+              /></a>
+              <a href="./chitietSanPham.html">Bánh mì lườn ngỗng bắc kinh</a>
+            </div>
+            <div>
+              <a href="./chitietSanPham.html"
+                ><img src="../../img/index/sanpham2.webp" alt=""
+              /></a>
+              <a href="./chitietSanPham.html">Bánh mì que pate chà bông</a>
+            </div>
+            <div>
+              <a href="./chitietSanPham.html"
+                ><img src="../../img/index/sanpham4.webp" alt=""
+              /></a>
+              <a href="./chitietSanPham.html">Chà bông cay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer"></footer>
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./chi-tiet-san-pham.js"></script>
+    <script src="../../header-footer.js"></script>
+  </body>
 </html>

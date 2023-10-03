@@ -36,6 +36,35 @@ let header = `
         </nav>
     </div>
 `;
+let footer = `
+<div class="footer_item">
+    <ul>
+        <h1>Thông tin</h1>
+        <p>
+            CÔNG TY TNHH BIG BELLY Số 20-20B Trần Cao Vân, phường Đa Kao, quận
+            1, TP. HCM Giấy chứng nhận đăng ký kinh doanh số 0316814767 do Sở Kế
+            hoạch và Đầu tư Thành phố Hồ Chí Minh cấp lần đầu vào ngày 19 tháng
+            04 năm 2021 ĐT: 0903 793 625 Email: support@bigbelly.vn
+        </p>
+    </ul>
+</div>
+<div class="footer_item">
+    <ul>
+        <h1>Hỗ trợ</h1>
+        <li>Đặt hàng ngay</li>
+        <li>Thông tin giao hàng</li>
+    </ul>
+</div>
+<div class="footer_item">
+    <ul>
+        <h1>Hướng dẫn</h1>
+        <li>Chính sách đổi trả</li>
+        <li>Chính sách bảo mật</li>
+        <li>Điểu khoản dịch vụ</li>
+        <li>Tìm kiếm</li>
+    </ul>
+</div>
+`;
 let content = `
     <li><a href="../dang-nhap/dang-nhap.html">Đăng nhập</a></li>
     <li><a href="../dang-ky/dang-ky.html">Đăng ký</a></li>
@@ -51,6 +80,8 @@ let content1 = `
     </li>
 `;
 document.getElementById("header").innerHTML = header;
+document.getElementById("footer").innerHTML = footer;
+
 user !== null
   ? (document.getElementById("nav_login").innerHTML = content1)
   : (document.getElementById("nav_login").innerHTML = content);
