@@ -20,13 +20,6 @@ window.onload = function () {
   getAllProd();
   let count = 1;
   function renderProd(product) {
-    // handleTang = () => {
-    //   if (count < product.stock_qty) {
-    //     count += 1;
-    //     console.log("tang");
-    //     document.getElementById("quantity").innerHTML = `${count}`;
-    //   }
-    // };
     handleTang = () => {
       if (count < product.stock_qty) {
         count += 1;
@@ -104,7 +97,8 @@ window.onload = function () {
       }),
     }).then((res) =>
       res.json().then((data) => {
-        window.location.href = "../cart/cart.html";
+        alert("Đã thêm vào giỏ hàng");
+        // window.location.href = "../cart/cart.html";
       })
     );
   });
