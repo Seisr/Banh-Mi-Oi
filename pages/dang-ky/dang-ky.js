@@ -8,7 +8,27 @@ frm.submit(function (e) {
   for (var i = 0; i < dataArray.length; i++) {
     body[dataArray[i].name] = dataArray[i].value;
   }
+  // console.log(body);
+  let _acc = document.getElementById("acc").value;
+  let _password = document.getElementById("password").value;
+  let _email = document.getElementById("email").value;
+  let _phone = document.getElementById("phone").value;
+  let _dob = document.getElementById("dob").value;
+  let _name = document.getElementById("name").value;
+  var valid = true;
+  console.log(valid);
+  valid =
+    kiemTraPassword(_password, "tbPass") &
+    kiemTraEmail(_email, "tbEmail") &
+    kiemTraPhone(_phone, "tbPhone") &
+    kiemTraName(_name, "tbName") &
+    kiemTraDOB(_dob, "tbDOB");
 
+  console.log(valid);
+
+  if (!valid) {
+    return;
+  }
   $.ajax({
     type: "POST",
     url: "https://banhmioi-nvpaf9d6.b4a.run/users",
@@ -29,4 +49,4 @@ frm.submit(function (e) {
   });
 });
 
-console.log(body);
+// console.log(body);

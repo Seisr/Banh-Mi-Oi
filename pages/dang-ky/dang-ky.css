@@ -59,7 +59,6 @@ header {
     & li a:hover {
       background-color: #111;
     }
-
   }
 }
 
@@ -87,8 +86,8 @@ form {
 }
 
 /* Full-width inputs */
-input[type=text],
-input[type=password] {
+input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 12px 20px;
   margin: 20px 0;
@@ -97,7 +96,7 @@ input[type=password] {
   box-sizing: border-box;
 }
 
-input[type="radio"]+label {
+input[type="radio"] + label {
   cursor: pointer;
   padding-left: 25px;
   margin: 0 50px 0 0;
@@ -160,4 +159,9 @@ footer {
 
 h1 {
   text-align: center;
+}
+
+p {
+  color: red;
+  padding: 0px 0px 20px 0px;
 }

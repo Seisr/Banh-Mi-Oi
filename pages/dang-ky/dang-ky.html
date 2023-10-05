@@ -21,9 +21,11 @@
   <div class="right">
     <form id="dang-ky">
       <label for="fullname"><b>Họ và Tên</b></label>
-      <input type="text" placeholder="Nhập họ và tên" name="fullname" required />
+      <input id="name" type="text" placeholder="Nhập họ và tên" name="fullname" required />
+      <p id="tbName"></p>
       <label for="dob"><b>Ngày tháng năm sinh</b></label>
-      <input type="text" placeholder="dd/mm/yyyy" name="dob" required />
+      <input id="dob"type="text" placeholder="dd/mm/yyyy" name="dob" required />
+      <p id="tbDOB"></p>
       <div>
         <input id="radio1" type="radio" value="female" name="gender" />
         <label for="radio1"><b>Nữ</b></label>
@@ -32,13 +34,17 @@
       </div>
       <br />
       <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Nhập email" name="email" required />
+      <input id="email" type="text" placeholder="Nhập email" name="email" required />
+      <p id="tbEmail"></p>
       <label for="email"><b>Số điện thoại</b></label>
-      <input type="text" placeholder="Nhập số điện thoại" name="phone" required />
+      <input id="phone"type="text" placeholder="Nhập số điện thoại" name="phone" required />
+      <p id="tbPhone"></p>     
       <label for="uname"><b>Tên tài khoản</b></label>
-      <input type="text" placeholder="Nhập tên tài khoản" name="username" required />
+      <input id="acc"type="text" placeholder="Nhập tên tài khoản" name="username" required />
+      <p id="tbAcc"></p>
       <label for="psw"><b>Mật Khẩu</b></label>
-      <input type="password" placeholder="Mật khẩu" name="password" required />
+      <input id="password" type="password" placeholder="Mật khẩu" name="password" required />
+      <p id="tbPass"></p>
       <button type="submit">Đăng ký</button>
       <span class="psw">
         <a href="../dang-nhap/dang-nhap.html">Đăng nhập?</a>
@@ -48,6 +54,7 @@
 </div>
 <!-- <script type="text/javascript"></script> -->
 <footer id="footer"></footer>
+<script src="./validation.js"></script>
 <script src="./dang-ky.js"></script>
 <script src="../../header-footer.js"></script>
 
