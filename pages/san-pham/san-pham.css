@@ -69,6 +69,19 @@ header {
   }
 }
 
+/* searchbar */
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0em;
+  & input {
+    width: 50%;
+    height: 3em;
+  }
+}
+
 /* sanpham */
 
 .sanpham {
