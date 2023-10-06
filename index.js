@@ -23,7 +23,7 @@ let header = `
         <li><a href="#">Trang chủ</a></li>
         <li><a href="pages/san-pham/san-pham.html">Sản phẩm</a></li>
         <li><a href="pages/uu-dai/uu-dai.html">Thông tin ưu đãi</a></li>
-        <li><a href="">Tin tức</a></li>
+        <li><a href="pages/tin-tuc/tin-tuc.html">Tin tức</a></li>
         <!-- <li><a href="">Thông tin cửa hàng</a></li>  -->
         <li>
             <a href="pages/ve-chung-toi/ve-chung-toi.html">Về chúng tôi</a>
