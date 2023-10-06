@@ -54,6 +54,7 @@ header {
 }
 
 .banner-page-header {
+  margin-top: 3.2em;
   overflow: hidden;
   & img {
     height: 100%;
@@ -126,6 +127,11 @@ textarea::-moz-placeholder {
   /* border-left: solid 1px gray; */
   padding-left: 100px;
 }
+
+.container {
+  margin: 1em;
+}
+
 .box-info-contact li {
   margin-bottom: 30px;
 }

@@ -138,24 +138,51 @@ button {
 }
 
 .sanpham_content {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   text-align: center;
+  gap: 1em;
 
   & img {
     text-align: center;
     height: 95%;
-    width: 95%;
-    object-fit: cover;
+    width: 100%;
+    /* object-fit: cover; */
   }
 
   & img:hover {
     border: 2px solid #fff;
     transition: all 0.3s;
-    opacity: 0.85;
+    opacity: 0.7;
   }
-
+  /*
   & a:nth-child(2) {
     color: #ffffff;
+  } */
+  .sanpham_item {
+    & a {
+      color: #f97263;
+      font-family: polo;
+      z-index: 5;
+      /* opacity: 0; */
+      transition: 0.3s;
+    }
+    & img:hover h3 {
+      opacity: 1;
+    }
+    & p {
+      position: absolute;
+      width: 400px;
+      margin-top: 30px;
+      text-align: center;
+      color: white;
+      opacity: 0;
+      z-index: 5;
+      transition: 0.3;
+    }
+    & img:hover p {
+      opacity: 1;
+    }
   }
 }
 

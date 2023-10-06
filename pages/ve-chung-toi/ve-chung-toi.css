@@ -18,6 +18,7 @@ body {
 header {
   height: 100%;
   width: 100%;
+  z-index: 9999;
 
   .header_content {
     & nav {
@@ -163,13 +164,13 @@ section .main .men_text h1 span {
 }
 
 section .main .main_image img {
-  width: 700px;
+  width: 650px;
   position: relative;
   left: 70px;
 }
 
 section p {
-  width: 650px;
+  width: 600px;
   text-align: justify;
   position: relative;
   left: 123px;
@@ -617,8 +618,8 @@ section .main_btn:hover i {
 }
 
 .team .team_box .profile img {
-  width: 250px;
-  height: 250px;
+  width: 20em;
+  height: 20em;
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
@@ -630,7 +631,7 @@ section .main_btn:hover i {
 
 .team .team_box .profile:hover img {
   border-radius: 20px;
-  margin-top: -230px;
+  margin-top: -18em;
 }
 
 .team .team_box .profile .info {
