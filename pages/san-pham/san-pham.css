@@ -79,26 +79,33 @@ header {
   margin: 2em 0em;
   & input {
     width: 50%;
-    height: 3em;
+    height: 2em;
+    border-radius: 0.5em;
+    padding: 1.5em;
+  }
+  & input::placeholder {
+    text-align: center;
   }
 }
 
 /* sanpham */
 
 .sanpham {
+  padding: 0em 12em;
   display: flex;
   margin-bottom: 2em;
   .sanpham_left {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 4em;
     & img {
       height: 100%;
       width: 100%;
+      border-radius: 2em;
     }
     & img:hover {
-      border: 1px solid black;
+      border: 2px solid #ed3c28;
       transition: all 0.2s;
       opacity: 0.85;
     }
@@ -133,6 +140,9 @@ footer {
 
 h1 {
   text-align: center;
+  margin-top: 1.5em;
+  color: #ed3c28;
+  font-weight: 1000;
 }
 
 /* Backtotop */

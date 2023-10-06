@@ -65,13 +65,13 @@ header {
 
 .banner img {
   width: 100%;
-  height: 50%;
+  height: 100%;
   margin-top: 3em;
 }
 
 section {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 section nav {
@@ -143,7 +143,7 @@ section .main {
   align-items: center;
   justify-content: space-around;
   position: relative;
-  top: 130px;
+  top: 5em;
 }
 
 section .main .men_text h1 {
@@ -362,8 +362,8 @@ section .main_btn:hover i {
 
 .review {
   width: 100%;
-  height: 100vh;
-  padding: 70px 0;
+  height: 100%;
+  /* padding: 0em 0; */
 }
 
 .review h1 {
@@ -557,7 +557,7 @@ section .main_btn:hover i {
 
 .team {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   background-image: url(../../img/ve-chung-toi/bg1.jpg);
   background-size: cover;
   background-position: center;
