@@ -1,3 +1,5 @@
+let items = [];
+
 window.onload = function () {
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get("productid");
@@ -9,7 +11,14 @@ window.onload = function () {
       method: "GET",
     });
     promise.then(function (res) {
-      console.log(res.data.data[myParam]);
+      items = res.data.data.map((item) => {
+        return {
+          name: item.name,
+          price: item.price,
+          id: item.id,
+          product_url: item.product_url,
+        };
+      });
       renderProd(res.data.data[myParam]);
     });
     promise.catch(function (err) {
@@ -51,7 +60,7 @@ window.onload = function () {
     content += `<img src="${product.product_url}" alt=""/>`;
     var content1 = "";
     content1 += `
-        <h1>${product.name}</h1>
+        <h1 id="prod_name">${product.name}</h1>
         <div class="price"><span id="price">${price}</span></div>
         <div class="purchase">
         <input type="button" value="-" class="qty-btn" onclick=handleGiam() />
@@ -68,6 +77,59 @@ window.onload = function () {
     document.getElementById("dtLeft").innerHTML = content;
     document.getElementById("dtR1").innerHTML = content1;
     document.getElementById("dtR2").innerHTML = content2;
+
+    let prod_name = document
+      .getElementById("prod_name")
+      .innerText.substring(0, 9)
+      .toLowerCase();
+    console.log(prod_name);
+    const fitem = items.filter((item) => {
+      if (
+        item.name
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .includes(prod_name) ||
+        item.name.toLowerCase().includes(prod_name)
+      ) {
+        return item;
+      }
+    });
+    console.log(fitem);
+
+    // let content3 = "";
+    // for (let i = 0; i < 3; i++) {
+    //   let product = fitem[i];
+    const content3 = fitem
+      .map((product, index) => {
+        if (index < 3) {
+          return ` 
+  <div>
+  <a href="./chi-tiet-san-pham.html?productid=${product.id - 1}"
+    ><img src="${product.product_url}" alt=""
+  /></a>
+  <a href="./chi-tiet-san-pham.html?productid=${product.id - 1}">${
+            product.name
+          }</a></div>
+`;
+        }
+      })
+      .join("");
+    //   <div>
+    //     <a href="./chi-tiet-san-pham.html"
+    //       ><img src="${product.product_url}" alt=""
+    //     /></a>
+    //     <a href="./chi-tiet-san-pham.html">${product.name}</a>
+    //   </div>
+    //   <div>
+    //     <a href="./chi-tiet-san-pham.html"
+    //       ><img src="${product.product_url}" alt=""
+    //     /></a>
+    //     <a href="./chi-tiet-san-pham.html">Chà bông cay</a>
+    //   </div>
+    // </div>
+
+    document.getElementById("sp_container").innerHTML = content3;
   }
   var frm = $("#add-cart");
 
