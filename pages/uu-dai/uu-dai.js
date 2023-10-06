@@ -1,6 +1,6 @@
 function getAllProd() {
   var promise = axios({
-    url: `https://banhmioi-nvpaf9d6.b4a.run/news?category=news`,
+    url: `https://banhmioi-nvpaf9d6.b4a.run/news?category=promotion`,
     method: "GET",
   });
 
@@ -14,9 +14,7 @@ function getAllProd() {
   });
 }
 
-//   goi ham
 getAllProd();
-//   ${} - truyen bien
 function renderProd(arr) {
   let content = "";
   for (let i = 0; i < arr.length; i++) {

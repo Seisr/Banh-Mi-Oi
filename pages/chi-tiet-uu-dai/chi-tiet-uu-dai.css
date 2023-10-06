@@ -4,16 +4,6 @@
   box-sizing: border-box;
 }
 
-/* @font-face {
-  font-family: "banhmi-font";
-  src: url("./Font/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf");
-} */
-/* 
-html {
-  font-family: "banhmi-font", sans-serif;
-  font-size: 10px;
-} */
-
 /* header */
 
 header {
@@ -209,4 +199,13 @@ footer {
 
 html {
   scroll-behavior: smooth;
+}
+
+p:last-child {
+  padding: 0;
+  margin-bottom: 2em;
+}
+
+.uudai_hangthang {
+  margin-bottom: 1em;
 }

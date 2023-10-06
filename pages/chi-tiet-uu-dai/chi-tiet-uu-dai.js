@@ -1,8 +1,3 @@
-$(function () {
-  $("#header").load("../../header.html");
-  $("#footer").load("../../footer.html");
-});
-
 function handleClick() {
   if (sessionStorage.getItem("token")) {
     window.location.href = "../cart/cart.html";
@@ -18,7 +13,7 @@ window.onload = function () {
 
   function getAllProd() {
     var promise = axios({
-      url: `https://banhmioi-nvpaf9d6.b4a.run/news?category=news`,
+      url: `https://banhmioi-nvpaf9d6.b4a.run/news?category=promotion`,
       method: "GET",
     });
 
@@ -31,15 +26,11 @@ window.onload = function () {
       console.log(err);
     });
   }
-
-  //   goi ham
   getAllProd();
-  //   ${} - truyen bien
-
   function renderProd(arr) {
     let content = "";
     content += `
-    ${arr[uuDaiID - 4].content}
+    ${arr[uuDaiID - 1].content}
     `;
     document.getElementById("uudai_ht").innerHTML = content;
   }
