@@ -35,7 +35,9 @@ window.onload = function () {
         price = count * pd_price;
         console.log("tang");
         document.getElementById("quantity").innerHTML = `${count}`;
-        document.getElementById("price").innerHTML = `${price}`;
+        document.getElementById(
+          "price"
+        ).innerHTML = `${price.toLocaleString()}`;
       }
       if (count > 0) {
         document.getElementById("my-button").disabled = false;
@@ -47,21 +49,22 @@ window.onload = function () {
         price = count * pd_price;
         console.log("giam");
         document.getElementById("quantity").innerHTML = `${count}`;
-        document.getElementById("price").innerHTML = `${price}`;
+        document.getElementById(
+          "price"
+        ).innerHTML = `${price.toLocaleString()}`;
       }
       if (count == 0) {
         document.getElementById("my-button").disabled = true;
       }
     };
     var pd_price = Number(product.list_price);
-    var price = count * pd_price;
-
+    var price = (count * pd_price).toLocaleString();
     var content = "";
     content += `<img src="${product.product_url}" alt=""/>`;
     var content1 = "";
     content1 += `
         <h1 id="prod_name">${product.name}</h1>
-        <div class="price"><span id="price">${price}</span></div>
+        <div class="price"><span id="price">${price.toLocaleString()}</span></div>
         <div class="purchase">
         <input type="button" value="-" class="qty-btn" onclick=handleGiam() />
         <span id="quantity">${count}</span>
