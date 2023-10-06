@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Reem+Kufi+Ink&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -54,7 +58,10 @@ header {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  /* font-family: Roboto, sans-serif; */
+  /* font-family: "Kaushan Script"; */
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Reem Kufi Ink", sans-serif; */
 }
 
 button {
