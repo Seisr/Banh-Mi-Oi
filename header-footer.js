@@ -77,6 +77,7 @@ let content1 = `
     <li><a style="cursor: pointer" onclick=handleOut()>Đăng xuất</a></li>
     <li>
         <a href="../cart/cart.html" class="fa fa-cart-shopping" onClick="handleClick()"></a>
+        <div class="cart_qty">0</div>
     </li>
 `;
 document.getElementById("header").innerHTML = header;

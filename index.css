@@ -57,10 +57,18 @@ header {
   }
 }
 
+.cart_qty {
+  background-color: red;
+  color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
 body {
-  /* font-family: Roboto, sans-serif; */
+  font-family: Roboto, sans-serif;
   /* font-family: "Kaushan Script"; */
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   /* font-family: "Reem Kufi Ink", sans-serif; */
 }
 
