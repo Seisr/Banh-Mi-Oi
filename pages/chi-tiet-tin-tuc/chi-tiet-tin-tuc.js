@@ -1,25 +1,16 @@
-function handleClick() {
-  if (sessionStorage.getItem("token")) {
-    window.location.href = "../cart/cart.html";
-  } else {
-    alert("Vui lòng đăng nhập");
-    window.location.href = "../dang-nhap/dang-nhap.html";
-  }
-}
-
 window.onload = function () {
   const a = new URLSearchParams(window.location.search);
   const tintucID = a.get("tintucID");
 
   function getAllProd() {
     var promise = axios({
-      url: `https://banhmioi-nvpaf9d6.b4a.run/news?category=news`,
+      url: `https://banhmioi-nvpaf9d6.b4a.run/news/${tintucID}`,
       method: "GET",
     });
 
     promise.then(function (res) {
-      console.log(res);
-      renderProd(res.data.data);
+      console.log(res.data);
+      renderProd(res.data);
     });
 
     promise.catch(function (err) {
@@ -27,11 +18,14 @@ window.onload = function () {
     });
   }
   getAllProd();
-  function renderProd(arr) {
+  function renderProd(news) {
     let content = "";
-    content += `
-      ${arr[tintucID - 4].content}
-      `;
-    document.getElementById("tintuc_ht").innerHTML = content;
+    document.getElementById(
+      "tintuc_header"
+    ).innerHTML = `<strong>${news.title}</strong>`;
+    document.getElementById(
+      "tintuc_author"
+    ).innerHTML = `Người viết: ${news.author} lúc ${news.created_at}`;
+    document.getElementById("tintuc_ht").innerHTML = news.content;
   }
 };
