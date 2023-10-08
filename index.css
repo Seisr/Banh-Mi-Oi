@@ -106,6 +106,10 @@ button {
   align-items: center;
   overflow: hidden;
 
+  & a {
+    text-decoration: none;
+    color: white;
+  }
   .about_left img {
     width: 100%;
     height: 100%;
@@ -126,6 +130,11 @@ button {
   display: flex;
   overflow: hidden;
   align-items: center;
+
+  & a {
+    text-decoration: none;
+    color: white;
+  }
 
   .mission_left {
     width: 70%;
