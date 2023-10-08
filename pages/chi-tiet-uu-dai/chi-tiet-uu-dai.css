@@ -20,6 +20,7 @@ header {
       position: fixed;
       top: 0;
       width: 100%;
+      z-index: 10;
     }
 
     & .nav_content {
@@ -51,6 +52,13 @@ header {
       background-color: #111;
     }
   }
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  /* font-family: "Kaushan Script"; */
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Reem Kufi Ink", sans-serif; */
 }
 
 /* banner */
@@ -87,7 +95,6 @@ main {
 .uudai_hangthang {
   margin-left: 2em;
 }
-
 
 .uudai_hangthang_content {
   line-height: 21px;

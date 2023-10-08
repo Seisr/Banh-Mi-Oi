@@ -24,6 +24,7 @@ header {
       position: fixed;
       top: 0;
       width: 100%;
+      z-index: 10;
     }
 
     & .nav_content {
@@ -88,11 +89,9 @@ body {
   height: 100%;
 }
 
-
 .tintuc_hangthang {
   margin: 2em 10em 10em 20em;
 }
-
 
 .tintuc_hangthang_content {
   line-height: 21px;
