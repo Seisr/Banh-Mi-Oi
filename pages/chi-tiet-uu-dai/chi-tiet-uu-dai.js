@@ -1,25 +1,16 @@
-function handleClick() {
-  if (sessionStorage.getItem("token")) {
-    window.location.href = "../cart/cart.html";
-  } else {
-    alert("Vui lòng đăng nhập");
-    window.location.href = "../dang-nhap/dang-nhap.html";
-  }
-}
-
 window.onload = function () {
   const a = new URLSearchParams(window.location.search);
   const uuDaiID = a.get("uudaiID");
 
   function getAllProd() {
     var promise = axios({
-      url: `https://banhmioi-nvpaf9d6.b4a.run/news?category=promotion`,
+      url: `https://banhmioi-nvpaf9d6.b4a.run/news/${uuDaiID}`,
       method: "GET",
     });
 
     promise.then(function (res) {
-      console.log(res);
-      renderProd(res.data.data);
+      console.log(res.data);
+      renderProd(res.data);
     });
 
     promise.catch(function (err) {
@@ -27,11 +18,15 @@ window.onload = function () {
     });
   }
   getAllProd();
-  function renderProd(arr) {
+  function renderProd(news) {
     let content = "";
-    content += `
-    ${arr[uuDaiID - 1].content}
-    `;
-    document.getElementById("uudai_ht").innerHTML = content;
+    document.getElementById(
+      "uudai_header"
+    ).innerHTML = `<strong>${news.title}</strong>`;
+    document.getElementById(
+      "uudai_author"
+    ).innerHTML = `Người viết: ${news.author} lúc ${news.created_at}`;
+    document.getElementById("uudai_subtitle").innerHTML = news.subtitle;
+    document.getElementById("uudai_ht").innerHTML = news.content;
   }
 };
