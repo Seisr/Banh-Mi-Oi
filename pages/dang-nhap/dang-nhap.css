@@ -144,6 +144,12 @@ footer {
   .footer_signup {
     width: 100%;
   }
+  & h1 {
+    /* text-align: center; */
+    margin-top: 1.5em;
+    color: #ed3c28;
+    font-weight: 1000;
+  }
 }
 
 h1 {

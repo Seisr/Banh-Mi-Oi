@@ -217,6 +217,14 @@ button {
   overflow: hidden;
   margin: 2em 0em;
 
+  & a {
+    color: #f97263;
+    font-family: polo;
+    z-index: 5;
+    /* opacity: 0; */
+    transition: 0.3s;
+  }
+
   & img {
     /* padding: 0.5em 0em; */
     margin: 0.5em 1em;
@@ -306,6 +314,12 @@ footer {
 
   .footer_signup {
     width: 100%;
+  }
+  & h1 {
+    /* text-align: center; */
+    margin-top: 1.5em;
+    color: #ed3c28;
+    font-weight: 1000;
   }
 }
 
