@@ -24,6 +24,7 @@ header {
   height: 100%;
   width: 100%;
   z-index: 9999;
+  overflow: hidden;
 
   .header_content {
     & nav {
@@ -73,11 +74,13 @@ header {
   width: 100%;
   height: 100%;
   margin-top: 3em;
+  overflow: hidden;
 }
 
 section {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 section nav {
@@ -96,6 +99,7 @@ section nav .logo img {
   width: 100px;
   cursor: pointer;
   margin: 7px 0;
+  overflow: hidden;
 }
 
 section nav ul {
@@ -213,6 +217,7 @@ section .main_btn:hover i {
   width: 100%;
   height: 100vh;
   padding: 70px 0;
+  overflow: hidden;
 }
 
 .about .about_main {
@@ -266,6 +271,7 @@ section .main_btn:hover i {
 .gallary {
   width: 100%;
   padding: 70px 0;
+  overflow: hidden;
 }
 
 .gallary h1 {
@@ -369,7 +375,10 @@ section .main_btn:hover i {
 .review {
   width: 100%;
   height: 100%;
+  text-align: center;
+  justify-content: center;
   /* padding: 0em 0; */
+  overflow: hidden;
 }
 
 .review h1 {
@@ -567,6 +576,7 @@ section .main_btn:hover i {
   background-image: url(../../img/ve-chung-toi/bg1.jpg);
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .team h1 {
