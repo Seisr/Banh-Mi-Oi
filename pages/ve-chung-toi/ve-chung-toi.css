@@ -166,7 +166,7 @@ section .main .men_text h1 {
 section .main .men_text h1 span {
   margin-left: 15px;
   color: #ed3c28;
-  font-family: mv boli;
+  /* font-family: mv boli; */
   line-height: 22px;
   font-size: 70px;
 }
@@ -235,7 +235,7 @@ section .main_btn:hover i {
 .about .about_main .about_text h1 span {
   color: #ed3c28;
   margin-right: 15px;
-  font-family: mv boli;
+  /* font-family: mv boli; */
 }
 
 .about .about_main .about_text h1 {
@@ -326,7 +326,7 @@ section .main_btn:hover i {
   font-size: 35px;
   margin-bottom: 130px;
   color: #ed3c28;
-  font-family: polo;
+  /* font-family: polo; */
   z-index: 5;
   opacity: 0;
   transition: 0.3s;
@@ -377,7 +377,7 @@ section .main_btn:hover i {
   height: 100%;
   text-align: center;
   justify-content: center;
-  /* padding: 0em 0; */
+  padding: 5em 0;
   overflow: hidden;
 }
 
@@ -391,7 +391,7 @@ section .main_btn:hover i {
 .review h1 span {
   margin-left: 15px;
   color: #ed3c28;
-  font-family: mv boli;
+  /* font-family: mv boli; */
 }
 
 .review h1 span::after {
@@ -408,6 +408,7 @@ section .main_btn:hover i {
   width: 95%;
   margin: 70px auto;
   display: flex;
+  justify-content: center;
 }
 
 .review .review_box .review_card {
@@ -507,7 +508,7 @@ section .main_btn:hover i {
 .order h1 span {
   color: #ed3c28;
   margin-right: 15px;
-  font-family: mv boli;
+  /* font-family: mv boli; */
 }
 
 .order h1 span::after {
@@ -590,7 +591,7 @@ section .main_btn:hover i {
 .team h1 span {
   color: #ed3c28;
   margin-left: 15px;
-  font-family: mv boli;
+  /* font-family: mv boli; */
 }
 
 .team h1 span::after {
@@ -686,9 +687,7 @@ footer {
   padding: 5em 1em;
   color: #ffffff;
   background-image: url("/img/index/footer.webp");
-  background-repeat: no-repeat;
-  object-fit: calc();
-  background-size: auto;
+  background-size: cover;
   .footer_item:nth-child(1) {
     width: 30%;
   }

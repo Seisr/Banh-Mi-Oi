@@ -134,10 +134,8 @@ footer {
   padding: 5em 1em;
   color: #ffffff;
   background-image: url("/img/index/footer.webp");
-  background-repeat: no-repeat;
-  object-fit: calc();
-  background-size: auto;
-  position: relative;
+  background-size: cover;
+  /* position: relative; */
 
   .footer_item:nth-child(1) {
     width: 30%;

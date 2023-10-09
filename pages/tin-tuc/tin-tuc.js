@@ -24,7 +24,7 @@ function renderProd(arr) {
         <h2>
           <a href="../../pages/chi-tiet-tin-tuc/chi-tiet-tin-tuc.html?tintucID=${product.id}">
             <img src="${product.image_url}" alt="" />
-            ${product.title}
+            <p>${product.title}</p>
           </a>
         </h2>
         <p>
