@@ -284,7 +284,7 @@ section .main_btn:hover i {
 .gallary h1 span {
   margin-left: 15px;
   color: #ed3c28;
-  font-family: mv boli;
+  /* font-family: mv boli; */
 }
 
 .gallary h1 span::after {
