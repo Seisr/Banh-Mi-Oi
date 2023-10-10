@@ -42,7 +42,7 @@ let generateCartItems = () => {
           price,
           qty: item,
         } = x;
-
+        console.log("đây là price", price);
         return `
             <div class="product-row">
             <div class="item-info">
