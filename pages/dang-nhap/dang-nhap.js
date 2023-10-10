@@ -6,7 +6,6 @@ frm.submit(function (e) {
 
   let user1 = document.getElementById("userName1").value;
   console.log(user1);
-  sessionStorage.setItem("username", JSON.stringify(user1));
 
   var body = {};
   var dataArray = frm.serializeArray();
@@ -23,6 +22,7 @@ frm.submit(function (e) {
       console.log(data);
       console.log("Submission was successful.");
       sessionStorage.setItem("token", data.jwt);
+      sessionStorage.setItem("username", JSON.stringify(user1));
       console.log(sessionStorage.token);
       window.location.href = "../san-pham/san-pham.html";
       alert("Đăng nhập thành công!");
