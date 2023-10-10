@@ -63,7 +63,7 @@ window.onload = function () {
     var content1 = "";
     content1 += `
         <h1 id="prod_name">${product.name}</h1>
-        <div class="price"><span id="price">${price}</span></div>
+        <div class="price"><span id="price">${price.toLocaleString()}</span></div>
         <div class="purchase">
         <input type="button" value="-" class="qty-btn" onclick=handleGiam() />
         <span id="quantity">${count}</span>
