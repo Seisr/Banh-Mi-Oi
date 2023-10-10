@@ -1,5 +1,4 @@
 let items = [];
-feature/refine-add-to-cart-code
 let product_price = 0;
 let formatter = new Intl.NumberFormat("vi-VN", {
   style: "currency",
@@ -42,7 +41,9 @@ window.onload = function () {
         price = count * pd_price;
         console.log("tang");
         document.getElementById("quantity").innerHTML = `${count}`;
-        document.getElementById("price").innerHTML = `${price}`;
+        document.getElementById(
+          "price"
+        ).innerHTML = `${price.toLocaleString()}`;
       }
       if (count > 0) {
         document.getElementById("my-button").disabled = false;
@@ -54,7 +55,9 @@ window.onload = function () {
         price = count * pd_price;
         console.log("giam");
         document.getElementById("quantity").innerHTML = `${count}`;
-        document.getElementById("price").innerHTML = `${price}`;
+        document.getElementById(
+          "price"
+        ).innerHTML = `${price.toLocaleString()}`;
       }
       if (count == 0) {
         document.getElementById("my-button").disabled = true;
