@@ -5,6 +5,14 @@ let formatter = new Intl.NumberFormat("vi-VN", {
   style: "currency",
   currency: "VND",
 });
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  if (!sessionStorage.getItem("token")) {
+    alert("Vui lòng đăng nhập");
+    window.location.href = "../dang-nhap/dang-nhap.html";
+  }
+});
+
 fetch("https://banhmioi-nvpaf9d6.b4a.run/carts", {
   method: "GET",
   headers: {

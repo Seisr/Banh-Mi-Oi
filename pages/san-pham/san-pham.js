@@ -36,21 +36,10 @@ searchBar.addEventListener("input", (e) => {
     ) {
       return item;
     }
-    // item.element.classList.toggle("hidden", !isVisible);
   });
   console.log(fitem);
   renderProd(fitem);
 });
-
-// searchBar.addEventListener("keyup", (e) => {
-//   const searchString = e.target.value.toLowerCase();
-
-//   const filteredCharacters = items.filter((character) => {
-//     return character.name.toLowerCase().includes(searchString);
-//   });
-//   console.log(filteredCharacters);
-//   renderProd(filteredCharacters);
-// });
 
 function renderProd(products) {
   const content = products
@@ -66,18 +55,5 @@ function renderProd(products) {
  `;
     })
     .join("");
-
-  //   let content = "";
-  //   for (let i = 0; i < arr.length; i++) {
-  //     let product = arr[i];
-  //     content += `
-  //     <div class="sanpham_item">
-  //     <a href="../../pages/chi-tiet-san-pham/chi-tiet-san-pham.html?productid=${
-  //       product.id - 1
-  //     }"><img src="${product.product_url}" alt="" /></a>
-  //     <p>${product.name}</p>
-  //   </div>
-  // `;
-
   document.getElementById("spl").innerHTML = content;
 }

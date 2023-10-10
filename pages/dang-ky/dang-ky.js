@@ -48,5 +48,3 @@ frm.submit(function (e) {
     },
   });
 });
-
-// console.log(body);
