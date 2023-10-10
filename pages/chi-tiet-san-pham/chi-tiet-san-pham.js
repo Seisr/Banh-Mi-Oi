@@ -1,5 +1,10 @@
 let items = [];
+feature/refine-add-to-cart-code
 let product_price = 0;
+let formatter = new Intl.NumberFormat("vi-VN", {
+  style: "currency",
+  currency: "VND",
+});
 window.onload = function () {
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get("productid");
@@ -37,9 +42,7 @@ window.onload = function () {
         price = count * pd_price;
         console.log("tang");
         document.getElementById("quantity").innerHTML = `${count}`;
-        document.getElementById(
-          "price"
-        ).innerHTML = `${price.toLocaleString()}`;
+        document.getElementById("price").innerHTML = `${price}`;
       }
       if (count > 0) {
         document.getElementById("my-button").disabled = false;
@@ -51,22 +54,20 @@ window.onload = function () {
         price = count * pd_price;
         console.log("giam");
         document.getElementById("quantity").innerHTML = `${count}`;
-        document.getElementById(
-          "price"
-        ).innerHTML = `${price.toLocaleString()}`;
+        document.getElementById("price").innerHTML = `${price}`;
       }
       if (count == 0) {
         document.getElementById("my-button").disabled = true;
       }
     };
     var pd_price = Number(product.list_price);
-    var price = (count * pd_price).toLocaleString();
+    var price = count * pd_price;
     var content = "";
     content += `<img src="${product.product_url}" alt=""/>`;
     var content1 = "";
     content1 += `
         <h1 id="prod_name">${product.name}</h1>
-        <div class="price"><span id="price">${price.toLocaleString()}</span></div>
+        <div class="price"><span id="price">${price}</span></div>
         <div class="purchase">
         <input type="button" value="-" class="qty-btn" onclick=handleGiam() />
         <span id="quantity">${count}</span>
