@@ -70,13 +70,6 @@ let generateCartItems = () => {
   }
 };
 
-let calculation = () => {
-  let noOfItemsInCart = document.getElementById("cart-items-no");
-  noOfItemsInCart.innerHTML = basket
-    .map((x) => x.item)
-    .reduce((x, y) => x + y, 0);
-};
-
 var frm = $("#mua-hang");
 frm.submit(function (e) {
   e.preventDefault();

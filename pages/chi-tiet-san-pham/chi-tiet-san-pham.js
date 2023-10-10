@@ -1,4 +1,6 @@
 let items = [];
+feature/refine-add-to-cart-code
+let product_price = 0;
 let formatter = new Intl.NumberFormat("vi-VN", {
   style: "currency",
   currency: "VND",
@@ -22,7 +24,9 @@ window.onload = function () {
           product_url: item.product_url,
         };
       });
-      renderProd(res.data.data[myParam]);
+      let product = res.data.data[myParam];
+      product_price = Number(product.list_price);
+      renderProd(product);
     });
     promise.catch(function (err) {
       console.log(err);
@@ -157,7 +161,8 @@ window.onload = function () {
         variation: {},
         note: body.note,
         qty: Number(document.getElementById("quantity").innerHTML),
-        price: Number(document.getElementById("price").innerHTML),
+        price:
+          Number(document.getElementById("quantity").innerHTML) * product_price,
       }),
     }).then((res) =>
       res.json().then((data) => {
