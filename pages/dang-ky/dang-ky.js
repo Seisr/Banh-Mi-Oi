@@ -8,21 +8,14 @@ frm.submit(function (e) {
   for (var i = 0; i < dataArray.length; i++) {
     body[dataArray[i].name] = dataArray[i].value;
   }
-  // console.log(body);
-  let _acc = document.getElementById("acc").value;
-  let _password = document.getElementById("password").value;
-  let _email = document.getElementById("email").value;
-  let _phone = document.getElementById("phone").value;
-  let _dob = document.getElementById("dob").value;
-  let _name = document.getElementById("name").value;
   var valid = true;
   console.log(valid);
   valid =
-    kiemTraPassword(_password, "tbPass") &
-    kiemTraEmail(_email, "tbEmail") &
-    kiemTraPhone(_phone, "tbPhone") &
-    kiemTraName(_name, "tbName") &
-    kiemTraDOB(_dob, "tbDOB");
+    kiemTraPassword(body["password"], "tbPass") &
+    kiemTraEmail(body["email"], "tbEmail") &
+    kiemTraPhone(body["phone"], "tbPhone") &
+    kiemTraName(body["fullname"], "tbName") &
+    kiemTraDOB(body["dob"], "tbDOB");
 
   console.log(valid);
 
