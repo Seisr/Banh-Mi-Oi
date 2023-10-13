@@ -106,9 +106,6 @@ window.onload = function () {
     });
     console.log(fitem);
 
-    // let content3 = "";
-    // for (let i = 0; i < 3; i++) {
-    //   let product = fitem[i];
     const content3 = fitem
       .map((product, index) => {
         if (index < 3) {
@@ -124,19 +121,6 @@ window.onload = function () {
         }
       })
       .join("");
-    //   <div>
-    //     <a href="./chi-tiet-san-pham.html"
-    //       ><img src="${product.product_url}" alt=""
-    //     /></a>
-    //     <a href="./chi-tiet-san-pham.html">${product.name}</a>
-    //   </div>
-    //   <div>
-    //     <a href="./chi-tiet-san-pham.html"
-    //       ><img src="${product.product_url}" alt=""
-    //     /></a>
-    //     <a href="./chi-tiet-san-pham.html">Chà bông cay</a>
-    //   </div>
-    // </div>
 
     document.getElementById("sp_container").innerHTML = content3;
   }

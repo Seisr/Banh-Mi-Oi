@@ -88,5 +88,6 @@ user !== null
 
 function handleOut() {
   sessionStorage.removeItem("username");
+  sessionStorage.removeItem("token");
   window.location.reload();
 }
