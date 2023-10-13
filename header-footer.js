@@ -92,7 +92,3 @@ function handleOut() {
   sessionStorage.removeItem("token");
   window.location.reload();
 }
-
-{
-  /* <div class="cart_qty">0</div> */
-}
