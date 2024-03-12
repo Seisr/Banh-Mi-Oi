@@ -5,6 +5,9 @@ function getAllProd() {
     // url: `http://localhost:1323/products`,
     url: `https://f0fe-58-187-24-204.ngrok-free.app/products`,
     method: "GET",
+    headers: {
+      "ngrok-skip-browser-warning": "any",
+    },
   });
   promise.then(function (res) {
     items = res.data.data.map((item) => {
