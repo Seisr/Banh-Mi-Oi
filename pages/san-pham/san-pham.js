@@ -1,7 +1,9 @@
 let items = [];
 function getAllProd() {
   var promise = axios({
-    url: `https://banhmioi-nvpaf9d6.b4a.run/products`,
+    // url: `https://banhmioi-nvpaf9d6.b4a.run/products`,
+    // url: `http://localhost:1323/products`,
+    url: `https://f0fe-58-187-24-204.ngrok-free.app/products`,
     method: "GET",
   });
   promise.then(function (res) {

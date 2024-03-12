@@ -1,6 +1,7 @@
 function getAllProd() {
   var promise = axios({
-    url: `https://banhmioi-nvpaf9d6.b4a.run/news?category=promotion`,
+    // url: `https://banhmioi-nvpaf9d6.b4a.run/news?category=promotion`,
+    url: `http://localhost:1323/news?category=promotion`,
     method: "GET",
   });
 

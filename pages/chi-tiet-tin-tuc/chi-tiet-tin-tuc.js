@@ -4,7 +4,8 @@ window.onload = function () {
 
   function getAllProd() {
     var promise = axios({
-      url: `https://banhmioi-nvpaf9d6.b4a.run/news/${tintucID}`,
+      url: `http://localhost:1323/news/${tintucID}`,
+      // url: `https://banhmioi-nvpaf9d6.b4a.run/news/${tintucID}`,
       method: "GET",
     });
 

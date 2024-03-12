@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     window.location.href = "../dang-nhap/dang-nhap.html";
   }
 });
-
-fetch("https://banhmioi-nvpaf9d6.b4a.run/carts", {
+// url: `https://banhmioi-nvpaf9d6.b4a.run/carts`
+fetch("http://localhost:1323/carts", {
   method: "GET",
   headers: {
     Authorization: `Bearer ${sessionStorage.token}`,

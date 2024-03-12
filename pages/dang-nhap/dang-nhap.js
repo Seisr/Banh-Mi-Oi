@@ -15,7 +15,8 @@ frm.submit(function (e) {
 
   $.ajax({
     type: "POST",
-    url: "https://banhmioi-nvpaf9d6.b4a.run/login",
+    // url: "https://banhmioi-nvpaf9d6.b4a.run/login",
+    url: `http://localhost:1323/products/login`,
     data: JSON.stringify(body),
     contentType: "application/json; charset=utf-8",
     success: function (data) {

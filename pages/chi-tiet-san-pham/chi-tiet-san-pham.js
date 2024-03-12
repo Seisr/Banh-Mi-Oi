@@ -11,7 +11,8 @@ window.onload = function () {
   console.log(myParam);
   function getAllProd() {
     let promise = axios({
-      url: `https://banhmioi-nvpaf9d6.b4a.run/products`,
+      // url: `https://banhmioi-nvpaf9d6.b4a.run/products`,
+      url: `http://localhost:1323/products`,
       method: "GET",
     });
     promise.then(function (res) {
