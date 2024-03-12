@@ -25,7 +25,10 @@ frm.submit(function (e) {
   $.ajax({
     type: "POST",
     // url: "https://banhmioi-nvpaf9d6.b4a.run/users",
-    url: `http://localhost:1323/products/users`,
+    url: `https://ec4c-58-187-24-204.ngrok-free.app/users`,
+    headers: {
+      "ngrok-skip-browser-warning": "any",
+    },
     data: JSON.stringify(body),
     contentType: "application/json; charset=utf-8",
     success: function (data) {

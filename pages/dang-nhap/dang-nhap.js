@@ -16,7 +16,10 @@ frm.submit(function (e) {
   $.ajax({
     type: "POST",
     // url: "https://banhmioi-nvpaf9d6.b4a.run/login",
-    url: `http://localhost:1323/products/login`,
+    url: `https://ec4c-58-187-24-204.ngrok-free.app/login`,
+    headers: {
+      "ngrok-skip-browser-warning": "any",
+    },
     data: JSON.stringify(body),
     contentType: "application/json; charset=utf-8",
     success: function (data) {

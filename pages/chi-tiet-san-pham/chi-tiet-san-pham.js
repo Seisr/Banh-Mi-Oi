@@ -12,8 +12,12 @@ window.onload = function () {
   function getAllProd() {
     let promise = axios({
       // url: `https://banhmioi-nvpaf9d6.b4a.run/products`,
-      url: `http://localhost:1323/products`,
+      // url: `http://localhost:1323/products`,
+      url: `https://ec4c-58-187-24-204.ngrok-free.app/products`,
       method: "GET",
+      headers: {
+        "ngrok-skip-browser-warning": "any",
+      },
     });
     promise.then(function (res) {
       items = res.data.data.map((item) => {

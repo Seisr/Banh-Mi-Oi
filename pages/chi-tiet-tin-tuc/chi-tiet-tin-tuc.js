@@ -4,9 +4,12 @@ window.onload = function () {
 
   function getAllProd() {
     var promise = axios({
-      url: `http://localhost:1323/news/${tintucID}`,
       // url: `https://banhmioi-nvpaf9d6.b4a.run/news/${tintucID}`,
+      url: `https://ec4c-58-187-24-204.ngrok-free.app/news/${tintucID}`,
       method: "GET",
+      headers: {
+        "ngrok-skip-browser-warning": "any",
+      },
     });
 
     promise.then(function (res) {

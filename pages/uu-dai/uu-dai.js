@@ -1,8 +1,11 @@
 function getAllProd() {
   var promise = axios({
     // url: `https://banhmioi-nvpaf9d6.b4a.run/news?category=promotion`,
-    url: `http://localhost:1323/news?category=promotion`,
+    url: `https://ec4c-58-187-24-204.ngrok-free.app/news?category=promotion`,
     method: "GET",
+    headers: {
+      "ngrok-skip-browser-warning": "any",
+    },
   });
 
   promise.then(function (res) {

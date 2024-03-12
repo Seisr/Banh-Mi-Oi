@@ -2,7 +2,7 @@ function getAllProd() {
   var promise = axios({
     // url: `https://banhmioi-nvpaf9d6.b4a.run/news?category=news`,
     // url: `http://localhost:1323/news`,
-    url: `https://70d0-58-187-24-204.ngrok-free.app/news?category=news`,
+    url: `https://ec4c-58-187-24-204.ngrok-free.app/news?category=news`,
     method: "GET",
     headers: {
       "ngrok-skip-browser-warning": "any",

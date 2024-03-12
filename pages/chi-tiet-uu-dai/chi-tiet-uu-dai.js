@@ -5,8 +5,11 @@ window.onload = function () {
   function getAllProd() {
     var promise = axios({
       // url: `https://banhmioi-nvpaf9d6.b4a.run/news/${uuDaiID}`,
-      url: `http://localhost:1323/news/${uuDaiID}`,
+      url: `https://ec4c-58-187-24-204.ngrok-free.app/news/${uuDaiID}`,
       method: "GET",
+      headers: {
+        "ngrok-skip-browser-warning": "any",
+      },
     });
 
     promise.then(function (res) {
