@@ -25,7 +25,7 @@ frm.submit(function (e) {
   $.ajax({
     type: "POST",
     // url: "https://banhmioi-nvpaf9d6.b4a.run/users",
-    url: `https://ec4c-58-187-24-204.ngrok-free.app/users`,
+    url: `https://adapted-grossly-monkfish.ngrok-free.app/users`,
     headers: {
       "ngrok-skip-browser-warning": "any",
     },

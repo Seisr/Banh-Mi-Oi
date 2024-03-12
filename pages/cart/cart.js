@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 });
 // url: `https://banhmioi-nvpaf9d6.b4a.run/carts`
-fetch("https://ec4c-58-187-24-204.ngrok-free.app/carts", {
+fetch("https://adapted-grossly-monkfish.ngrok-free.app/carts", {
   method: "GET",
   headers: {
     Authorization: `Bearer ${sessionStorage.token}`,
