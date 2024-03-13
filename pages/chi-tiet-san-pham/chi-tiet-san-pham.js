@@ -147,6 +147,7 @@ window.onload = function () {
       headers: {
         Authorization: `Bearer ${sessionStorage.token}`,
         "Content-Type": "application/json",
+        "ngrok-skip-browser-warning": "any",
       },
       body: JSON.stringify({
         product_id: product_id + 1,

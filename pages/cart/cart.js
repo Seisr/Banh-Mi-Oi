@@ -17,6 +17,7 @@ fetch("https://adapted-grossly-monkfish.ngrok-free.app/carts", {
   method: "GET",
   headers: {
     Authorization: `Bearer ${sessionStorage.token}`,
+    "ngrok-skip-browser-warning": "any",
   },
 }).then((res) =>
   res.json().then((data) => {
@@ -86,11 +87,12 @@ frm.submit(function (e) {
   for (var i = 0; i < dataArray.length; i++) {
     body[dataArray[i].name] = dataArray[i].value;
   }
-  fetch("https://banhmioi-nvpaf9d6.b4a.run/orders", {
+  fetch("https://adapted-grossly-monkfish.ngrok-free.app/orders", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${sessionStorage.token}`,
       "Content-Type": "application/json",
+      "ngrok-skip-browser-warning": "any",
     },
     body: JSON.stringify({
       phone: body.phone,
