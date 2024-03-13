@@ -142,7 +142,7 @@ window.onload = function () {
     for (var i = 0; i < dataArray.length; i++) {
       body[dataArray[i].name] = dataArray[i].value;
     }
-    fetch("https://banhmioi-nvpaf9d6.b4a.run/carts", {
+    fetch("https://adapted-grossly-monkfish.ngrok-free.app/carts", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${sessionStorage.token}`,
